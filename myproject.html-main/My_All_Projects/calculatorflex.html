@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .main {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            background-color: aqua;
+            height: 35vw;
+            width: 30%;
+            border: solid;
+            margin-left: 30%;
+            margin-top: 10%;
+            border-radius: 10px;
+
+
+
+        }
+
+        .frist-box {
+            background-color: grey;
+
+        }
+
+        .sec-box {
+            background-color: brown;
+        }
+
+        .inner-box {
+            height: 25%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            background-color: rgb(29, 28, 27);
+        }
+
+        .inner-one {
+            background-color: rgb(52, 37, 39);
+            height: 100%;
+            width: 100%;
+            align-self: center;
+            justify-self: center;
+            color: white;
+
+            text-align: center;
+            border: solid black;
+        }
+
+        .last-row {
+            background-color: #FF8911;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        button {
+            background-color: #282522;
+            height: 100%;
+            width: 100%;
+            color: white;
+        }
+
+        #display {
+            font-size: 22px;
+            color: white;
+            text-align: right;
+            border-radius: 1%;
+            border: solid black 2px;
+        }
+    </style>
+    <script>
+        let total = 0;
+        let displayString = ""
+        action = 0;
+
+        function add() {
+            total = Number(displayString);
+            displayString = "";
+            action = 1;
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function minus() {
+            total = Number(displayString);
+            displayString = "";
+            action = 2;
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function mult() {
+            total = Number(displayString);
+            displayString = "";
+            action = 3;
+            document.getElementById("display").innerHTML = displayString
+        }
+        function div() {
+            total = Number(displayString);
+            displayString = "";
+            action = 4;
+            document.getElementById("display").innerHTML = displayString;
+
+        } 
+        function point(){
+            total=Number(displayString)
+                displayString=displayString+point
+            document.getElementById("display").innerHTML=displayString;
+            
+        }
+        function showresult() {
+            if (action == 1) {
+                total = total + Number(displayString);
+            } else if (action == 2) {
+                total = total - Number(displayString);
+            } else if (action = 3) {
+                total = total * Number(displayString);
+            } else if (action == 4) {
+                total = total / Number(displayString);
+            }
+            
+
+            displayString = total;
+            document.getElementById("display").innerHTML = displayString;
+
+        }
+        function numberTyped(passednumber) {
+            displayString = displayString + passednumber.toString();
+            document.getElementById("display").innerHTML = displayString;
+        }
+
+
+
+
+        // cler//
+        function clearfunction() {
+            total="";
+            displayString="";
+            document.getElementById("display").innerHTML = ""
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <!-- main sec -->
+    <div class="main">
+        <div class="frist-box" id="display"></div>
+        <div class="sec-box">
+            <div class="inner-box">
+                <div class="inner-one" onclick="clearfunction()"><button>AC</button></div>
+                <div class="inner-one" onclick="displayFuction()"><button>+/-</button></div>
+                <div class="inner-one" onclick="displayFuction11()"><button>%</button></div>
+                <div class="inner-one last-row" onclick="div()"> <button class="last-row">/</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(7)"><button>7</button></div>
+                <div class="inner-one" onclick="numberTyped(8)"><button>8</button></div>
+                <div class="inner-one" onclick="numberTyped(9)"><button>9</button></div>
+                <div class="inner-one last-row" onclick="mult()"><button class="last-row" >*</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one"><button onclick="numberTyped(4)">4</button></div>
+                <div class="inner-one" onclick="numberTyped(5)"><button>5</button></div>
+                <div class="inner-one" onclick="numberTyped(6)"><button>6</button></div>
+                <div class="inner-one last-row" onclick="minus()"><button class="last-row">-</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(3)"><button>3</button></div>
+                <div class="inner-one" onclick="numberTyped(2)"><button>2</button></div>
+                <div class="inner-one" onclick="numberTyped(1)"><button>1</button></div>
+                <div class="inner-one last-row" onclick="add()"><button class="last-row">+</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(0)"><button>0</button></div>
+                <div class="inner-one" style="width: 50%;" onclick="point()"><button>.</button></div>
+                <div class="inner-one last-row" style="width: 50%;" onclick="showresult()"><button>=</button></div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

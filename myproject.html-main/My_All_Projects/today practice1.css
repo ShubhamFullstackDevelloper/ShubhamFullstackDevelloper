@@ -1,0 +1,53 @@
+table,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: larger;
+}
+
+td {
+
+  border: 1px;
+  border-style: dashed;
+  border-color: brown;
+  font-size: larger;
+}
+
+table {
+  background-color: rgb(212, 154, 164);
+
+
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+legend {
+  background-color: pink;
+}
+
+
+fieldset {
+  background-color: ;
+  margin-left: 250px;
+  border-style: dotted;
+  border-color: black 2px;
+}
+
+.SK {
+  background-color: rgb(64, 212, 27);
+}
+
+.ayush {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.shubham-bhai {
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
