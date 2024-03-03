@@ -1,0 +1,57 @@
+.container{
+    background-color: blue;
+    height: 1000px;
+    width: 1000px;
+}
+.button{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 100px ;
+    margin: 50px;
+    display: block;
+}
+@media (min-width:  800px){
+    .container
+    { 
+        background-color: yellowgreen;
+        height: 1000px;
+        width: 1000px;
+    }
+    .button{
+        background-color: darkmagenta;
+        height: 100px;
+        width: 100px ;
+        margin: 10px;
+        display: inline-block;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 700px) {
+    .container
+    { 
+        background-color:brown;
+        height: 1000px;
+        width: 1000px;
+    }
+    .button{
+        background-color: yellow;
+        height: 100px;
+        width: 100px ;
+        margin: 10px;
+        display: inline-block;}
+}
+@media (min-width: 400px) and (max-width: 550px) {
+    .container
+    { 
+        background-color: yellowgreen;
+        height: 1000px;
+        width: 1000px;
+    }
+    .button{
+        background-color: pink;
+        height: 100px;
+        width: 100px ;
+        margin: 10px;
+        display: block;
+                        }
+}

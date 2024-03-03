@@ -1,0 +1,43 @@
+.cell{
+    background-color: rgb(49, 28, 28);
+    
+    font-weight: 900;
+    padding: 50px;
+   
+
+}
+.box2{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 50px;
+    box-shadow: #E8C872;
+    
+    height: 1500px;
+  }
+  page{
+    background-color: #E8C872;
+    height:25cm;
+    width: 20cm;
+  }
+  .box4{
+  border-width: 2px;
+  border-color: black;
+  }
+  td,th,form{ 
+     border: black;
+     border-width: ;
+  }
+  .cellb{
+    background-color: crimson;
+    padding: 100px;
+    margin-left: 30px;
+  } 
+  #tbody{
+    padding: 50px;
+    margin: 50px;
+  }
+  .food{
+    background-color: aquamarine;
+    background-color: hotpink;
+  }

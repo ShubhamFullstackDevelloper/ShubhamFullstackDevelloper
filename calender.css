@@ -1,0 +1,47 @@
+table,
+th,
+td {
+    border-style: double solid;
+    border-collapse: collapse;
+    padding: 25px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+td {
+    border: 2px red dashed;
+}
+
+body{
+    background-color: chocolate;
+}
+.cell{
+    background-color: #0B60B0;
+}
+.cellA{
+    background-color: #40A2D8;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  .button1 {
+    background-color: #04AA6D;
+    color: white; padding: 25px;
+    margin-top: 50px;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA; padding: 50px;
+  }
+caption{
+   color: blue;
+   font-weight: 900;
+}
+table{
+    height: 700px;
+}
