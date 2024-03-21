@@ -100,12 +100,12 @@
             action = 4;
             document.getElementById("display").innerHTML = displayString;
 
-        } 
-        function point(){
-            total=Number(displayString)
-                displayString=displayString+point
-            document.getElementById("display").innerHTML=displayString;
-            
+        }
+        function point() {
+            total = Number(displayString)
+            displayString = displayString + point
+            document.getElementById("display").innerHTML = displayString;
+
         }
         function showresult() {
             if (action == 1) {
@@ -117,7 +117,7 @@
             } else if (action == 4) {
                 total = total / Number(displayString);
             }
-            
+
 
             displayString = total;
             document.getElementById("display").innerHTML = displayString;
@@ -133,8 +133,8 @@
 
         // cler//
         function clearfunction() {
-            total="";
-            displayString="";
+            total = "";
+            displayString = "";
             document.getElementById("display").innerHTML = ""
         }
 
@@ -160,7 +160,7 @@
                 <div class="inner-one" onclick="numberTyped(7)"><button>7</button></div>
                 <div class="inner-one" onclick="numberTyped(8)"><button>8</button></div>
                 <div class="inner-one" onclick="numberTyped(9)"><button>9</button></div>
-                <div class="inner-one last-row" onclick="mult()"><button class="last-row" >*</button></div>
+                <div class="inner-one last-row" onclick="mult()"><button class="last-row">*</button></div>
 
             </div>
             <div class="inner-box">

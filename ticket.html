@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <style>
+      
+        /* main container */
+        .main-container {
+            height: 80vh;
+            width: 50vw;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10%;
+            margin-left: 10%;
+
+        }
+
+        /* inner container */
+        .inner-container {
+            height: 55vh;
+            width: 100%;
+          
+        }
+
+        /* display */
+
+        .display {
+            
+            margin-left: 25%;
+            height: 80px;
+            width: 200px;
+            border-style: groove;
+            text-align: center;
+            color: #FB6D48;
+            font-size: 30px;
+            text-shadow: 3px 3px black;
+            background-color: #76885B;
+        }
+
+        /* input section */
+        .input-section {
+            height: 50px;
+            width: 400px;
+            background-color: #EABE6C;
+            margin-left: 4%;
+            margin-top: 3%;
+
+        }
+
+        /* button */
+
+        button {
+            height: 50px;
+            width: 400px;
+            background-color: #00224D;
+            margin-left: 4%;
+            margin-top: 3%;
+
+            text-align: center;
+            color: white;
+
+        }
+
+    </style>
+    <script>
+        function arithmatic() {
+            let x = document.getElementById("number").value;
+            let output;
+            let age = Number(x);
+            if (age < 17 || age > 70) {
+
+                output = "HALF  TICKET";
+            }
+            else {
+                output = "FULL TICKET";
+            }
+            
+            document.getElementById("display").innerHTML = output;
+        }
+
+        function clearfunction() {
+            document.getElementById("display").innerHTML = "";
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <!-- main container -->`
+    <div class="main-container">
+        <!-- display -->
+        <div class="display" id="display"></div>
+        <!-- inner container -->
+        <div class="inner-container">
+
+            <input class="input-section" type="number" id="number">
+            <button onclick="arithmatic()">Click here</button>
+            <button onclick="clearfunction()">Clear</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

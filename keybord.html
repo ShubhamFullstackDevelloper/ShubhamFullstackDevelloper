@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        .main{
+        .main {
             height: 50vh;
             width: 100vw;
             background-color: grey;
             display: grid;
             grid-template-columns: 3fr 1fr;
         }
-        .frist-row{
+
+        .frist-row {
             background-color: lightgreen;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
         }
-        .secound-row{
+
+        .frist-colomn {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        }
+
+        .sec-colomn {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        }
+
+        .secound-row {
             background-color: lightpink;
         }
+
+        button {
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100px;
+        }
     </style>
-    
+
 </head>
+
 <body>
     <div class="main">
         <div class="frist-row">
-            <div class="frist-row "></div>
+            <div class="frist-row ">
+                <div class=" frist-colomn">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>10</button>
+                    <button>11</button>
+                    <button>12</button>
+                    <button>13</button>
+                </div>
+                
+            </div>
+            <div class=" sec-colomn">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+                <button>11</button>
+                <button>12</button>
+                <button>13</button>
+            </div>
+            
         </div>
-    
+        
+        
+
         <div class="secound-row"></div>
     </div>
-    
+
 </body>
+
 </html>

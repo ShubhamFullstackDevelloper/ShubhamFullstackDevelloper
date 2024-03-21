@@ -1,5 +1,5 @@
 .main-contaianer {
-    background-color: #D04848;
+    background-color: #d04848dc;
     height: 100%;
     width: 100%;
     display: block;
@@ -30,10 +30,13 @@
 
 .cell-two {
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .intro {
-    background-color: #E493B3;
+    background-color: #ba3268;
 
 }
 
@@ -43,26 +46,29 @@
     height: 2%;
     width: 2%;
 }
-.main-ele{
-    display: grid;
-    background-color: aqua;
-    grid-template-columns:1fr 1fr 1fr;
 
-   
+.main-ele {
+    display: grid;
+    background-color: rgba(0, 255, 255, 0.451);
+    grid-template-columns: 1fr 1fr 1fr;
+
+
     height: 45vw;
     width: 100vw;
 }
-.frist-ele{
-    background-color:#B7C9F2;
+
+.frist-ele {
+    background-color: #B7C9F2;
     text-align: center;
     font-size: xx-large;
     color: #FDE767;
-   
+
     height: 90%;
-    width: 90% ;
+    width: 90%;
 }
-.sec-ele{
-    background-color:#B7C9F2;
+
+.sec-ele {
+    background-color: #B7C9F2;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
@@ -71,8 +77,9 @@
     height: 90%;
     width: 90%;
 }
-.third-ele{
-   
+
+.third-ele {
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
@@ -81,29 +88,61 @@
     height: 90%;
     width: 90%;
 }
-.image-one{
+
+.image-one {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
-.word{
-    font-size: 50px;
-    font-family:"Protest Riot", sans-serif; 
-    color: #FB88B4;
-    
-}
 
+.word {
+    font-size: 50px;
+    font-family: "Protest Riot", sans-serif;
+    color: #dc759c79;
+    text-align: center;
+    
+
+}
+button {
+
+    margin: 0;
+    cursor: cell;
+    font-family: "px-grotesk-regular";
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(3, 2, 2, 0.745);
+    color: #ad5151a0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    justify-content: center;
+    padding: 25px 32px;
+    -webkit-transition: .6s all cubic-bezier(1, 0, 0, 1);
+    width: 170px;
+    height: 100%;
+    white-space: nowrap;
+    bottom: 0;
+    right: 0px;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
 .glow-on-hover {
     width: 220px;
-    height: 50px;
+    height: 70px;
     border: none;
     outline: none;
-    color: #fff;
-    background: #111;
+
+    margin-left: 35%;
+    background:rgba(255, 0, 0, 0.459);
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    /* box-shadow: 10px 10px; */
 }
 
 .glow-on-hover:before {
@@ -111,9 +150,10 @@
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
+
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace ;
+    font-family: 'Courier New', Courier, monospace;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -123,11 +163,11 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-    
+
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #67c6e394
 }
 
 .glow-on-hover:active:after {
@@ -144,16 +184,24 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #67c6e383;
     left: 0;
     top: 0;
     border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 
@@ -177,19 +225,53 @@
         align-items: flex-end;
     }
 }
-@media( min-width:767px){
-   .main-contaianer {
+
+@media(min-width:767px) {
+    .main-contaianer {
         background-color: #D04848;
         height: 100%;
         width: 100%;
         display: block;
     }
+
     .box-one {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        color: #fde66756;
+
+    }
+
+    .frist-ele {
+        background-color: #b7c9f274;
+        text-align: center;
+        font-size: xx-large;
+        color: #fde6678d;
+
+        height: 90%;
+        width: 90%;
+    }
+
+    .sec-ele {
+        background-color: #b7c9f267;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        font-size: xx-large;
+        color: #fde667b1;
+        height: 90%;
+        width: 90%;
+    }
+
+    .third-ele {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        font-size: xx-large;
         color: #FDE767;
-    
+        height: 90%;
+        width: 90%;
     }
 
 }

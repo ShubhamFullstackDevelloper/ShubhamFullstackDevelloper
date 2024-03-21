@@ -19,6 +19,12 @@
             width: 80vw;
             height: 80vh;
 
+
+        }
+
+        .box-main {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
         }
 
         .display {
@@ -36,12 +42,13 @@
         .display-text {
             color: white;
             font-size: 22px;
+            background-color: rgba(255, 0, 0, 0.4);
         }
 
         .custom-button {
             margin-top: 20px;
             margin-left: 20%;
-            background-color: #94B49F;
+            background-color: rgba(45, 114, 154, 0.4);
             color: black;
             width: 60%;
             height: 44px;
@@ -73,7 +80,7 @@
         #play-button {
             height: 100px;
             width: 100px;
-            background-color: #211C6A;
+            background-color:rgba(45, 114, 154, 0.4);
             border-radius: 25px;
             margin-left: 25px;
             margin-top: 25px;
@@ -88,10 +95,13 @@
         function questionOne() {
             document.getElementById("display-text").innerHTML =
                 "what is capital of india?";
+            document.getElementById("boddy").style.backgroundImage =
+                "url('https://timesofindia.indiatimes.com/photo/86196144/86196144.jpg')";
             document.getElementById("answer-one").innerHTML = "New Delhi";
             document.getElementById("answer-two").innerHTML = "Kolkata";
             document.getElementById("answer-three").innerHTML = "chennai";
             document.getElementById("answer-four").innerHTML = "Mumbai";
+            audio.play();
         }
         // que 2////
 
@@ -128,6 +138,7 @@
             document.getElementById("display-text").innerHTML =
                 "Who is the first Prime Minister?";
             document.getElementById("answer-one").innerHTML = "pandit jawaharlal nehru";
+
             document.getElementById("answer-two").innerHTML = "lal bahadur shastri";
             document.getElementById("answer-three").innerHTML = "subhash chandra bose";
             document.getElementById("answer-four").innerHTML = "B.R Ambedkar";
@@ -135,7 +146,7 @@
         // 6////
         function questionSix() {
 
-            document.getElementById("display-text").innerHTML =
+            document.getElementById("display-text").innerhTML =
                 "When isro was established";
             document.getElementById("answer-one").innerHTML = "1969";
             document.getElementById("answer-two").innerHTML = "1949";
@@ -224,20 +235,24 @@
             document.getElementById("answer-four").innerHTML = " MS dhoni";
         }
 
+
         function question(question) {
+
             document.getElementById("container").style.backgroundColor = "#124076";
             document.getElementById("container").style
-            // que1///0
+
             if (question == 1) {
                 questionNumber = 1;
                 questionOne();
 
-                document.getElementById("display-text").innerHTML =
-                    "APP JEET GAYE 1 CRORE RUPAYEE";
+
+
+
                 // que2//
             } else if (question == 2) {
                 questionNumber = 2;
                 questionTwo();
+
                 // 3//
             } else if (question == 3) {
                 questionNumber = 3;
@@ -296,28 +311,39 @@
                 questionNumber = 14;
                 questionFifteen();
             }
-
             else {
 
                 document.getElementById("display-text").innerHTML =
                     "APP JEET GAYE 1 CRORE RUPAYEE";
+                let audio = new Audio("./Accets/voice/kbcstart.mp3");
+                audio.play()
             }
         }
         // ans1///
+
         function answer(givenAnswer) {
+
             if (questionNumber == 1) {
                 if (givenAnswer == 1) {
+
                     answerOne(true, 2);
+
                 } else {
+
                     answerOne(false, 0);
+                    audio.play();
                 }
                 // 2//
-            } else if (questionNumber == 2) {
+            }
+            else if (questionNumber == 2) {
                 if (givenAnswer == 3) {
                     answerOne(true, 3);
+
                 }
                 else {
+
                     answerOne(false, 0);
+                    audio.play();
                 }
                 3//
             } else if (questionNumber == 3) {
@@ -419,12 +445,16 @@
                     "Bilkul correct answer😃";
                 document.getElementById("container").style.backgroundColor =
                     "#95CD41";
+                let audio = new Audio("sahi.mp3");
+                audio.play();
                 setTimeout(() => {
                     question(nextQuestion);
                 }, 5000);
             } else {
                 document.getElementById("display-text").innerHTML =
                     "SSSS, Galat Jawab😟.";
+                let audio = new Audio("galt.mp3");
+                audio.play();
                 document.getElementById("container").style.backgroundColor =
                     "#8F1D14";
                 setTimeout(() => {
@@ -438,6 +468,7 @@
             document.getElementById("main-body").hidden = false;
             document.getElementById("play-button").hidden = true;
             question(1);
+
         }
 
         function startScreen() {
@@ -449,22 +480,25 @@
 </head>
 <!-- body -->
 
-<body>
+<body id="boddy">
+    <div class="box-main">
 
-    <button id="play-button" onclick="dostart()">LET"S START</button>
+
+        <button id="play-button" onclick="dostart()">LET"S START</button>
 
 
-    <div class="container" id="main-body" hidden="true">
+        <div class="container" id="main-body" hidden="true">
 
-        <div class="display" id="container">
-            <h1 id="display-text" class="display-text"></h1>
+            <div class="display" id="container" >
+                <h1 id="display-text" class="display-text"></h1>
 
-        </div>
-        <div class="box-btn">
-            <button class="custom-button" id="answer-one" onclick="answer(1)"></button>
-            <button class="custom-button" id="answer-two" onclick="answer(2)"></button>
-            <button class="custom-button" id="answer-three" onclick="answer(3)"></button>
-            <button class="custom-button" id="answer-four" onclick="answer(4)"></button>
+            </div>
+            <div class="box-btn">
+                <button class="custom-button" id="answer-one" onclick="answer(1)"></button>
+                <button class="custom-button" id="answer-two" onclick="answer(2)"></button>
+                <button class="custom-button" id="answer-three" onclick="answer(3)"></button>
+                <button class="custom-button" id="answer-four" onclick="answer(4)"></button>
+            </div>
         </div>
     </div>
 </body>

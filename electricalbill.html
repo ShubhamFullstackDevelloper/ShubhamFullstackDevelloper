@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Billing System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://www.shutterstock.com/image-photo/watthour-meter-electricity-use-home-260nw-1088177672.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .billing-form {
+            /* max-width: 300px; */
+            margin: auto;
+            border: solid rgba(0, 0, 0, 0.324) 5px;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(255, 192, 203, 0.273);
+        }
+
+
+        input {
+
+            width: 150px;
+            height: 100px;
+            border: solid rgba(0, 0, 0, 0.657) 3px;
+            margin-left: 610px;
+            background-color: rgba(183, 76, 162, 0.355);
+            color: black;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+
+
+        button {
+            width: 100px;
+            height: 60px;
+            padding: 10px;
+            /* margin-left: 610px; */
+            background-color: #CCD3CA;
+            color: #35241781;
+            font-size: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: #9BCF53;
+            text-shadow: 3px 3px black;
+            font-size: 42px;
+
+        }
+
+        #result {
+            height: 400px;
+            width: 500px;
+            margin-left: 500px;
+            background-color: rgba(150, 183, 19, 0.434);
+            color: black;
+            font-size: 42px;
+            border: 3px solid rgba(0, 0, 0, 0.306);
+            box-shadow: 3px 3px black;
+        }
+    </style>
+
+    <script>
+        function calculateBill() {
+            let units = document.getElementById('units').value;
+
+            let bill = 0;
+
+            if (units <= 50) {
+                bill = units * 0.5
+            }
+            else if (units <= 150) {
+                bill = 50 * 0.5 + (units - 50) * 0.75
+            }
+            else if (units <= 250) {
+                bill = 50 * 0.5 + 100 * 0.75 + (units - 150) * 1.25
+            }
+            else if (units > 250) {
+                bill = 50 * 0.5 + 100 * 0.75 + 150 * 1.25 + (units - 250) * 1.50
+            }
+
+            if (bill > 251) {
+                bill = bill + bill * 0.2
+            }
+
+            document.getElementById("result").innerText = "Total Bill: ₹" + bill;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="billing-form">
+        <h2 class="header"> Check Your Electrical Bill 🧾</h2>
+        <div id="result"></div>
+
+        <div class="display">
+            <input type="number" id="units" placeholder="Enter units">
+
+       
+        <button onclick="calculateBill()">Calculate Bill</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
