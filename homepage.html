@@ -23,9 +23,12 @@
             width: 100vw;
             gap: 5px;
             border: solid 3px rgba(0, 0, 0, 0.344);
-            background-repeat: no-repeat;
-            background-size: cover;
-
+            box-shadow: 10px 10px 10px rgba(255, 192, 203, 0.508);
+            
+        }
+        a{
+            background-color: #76ABAE;
+          
         }
 
         button {
@@ -39,12 +42,13 @@
         }
 
         #services .box {
-            border: 2px solid brown;
+            border: 2px solid rgba(165, 42, 42, 0.566);
             padding: 34px;
             margin: 2px 55px;
             border-radius: 28px;
             background: #f2f2f2;
             margin-bottom: 20px;
+            box-shadow: 10px 10px 10px rgba(209, 191, 194, 0.753);
 
         }
 
@@ -64,14 +68,15 @@
         }
 
         body {
-            background-image: url("https://wallpapercave.com/wp/PPMnOZM.jpg");
+            background-image: url("https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710979200&semt=ais ");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
         }
 
         .ctn {
             padding: 8px 15px;
-            background: #fc036b;
+            background: #df28749d;
             color: rgb(19, 14, 14);
             border-radius: 16vh;
             text-decoration: none;
@@ -145,7 +150,7 @@
         </h3>
         &emsp;&emsp;&emsp;&emsp;
         <h3 style="display: inline-block;">
-            <a href="./assignment.html">Assignment</a>
+            <a href="./assignment.html">Assignment(sum/odd)</a>
         </h3>
         &emsp;&emsp;&emsp;&emsp;
         <h3 style="display: inline-block;">
@@ -172,11 +177,15 @@
         </h3>
         &emsp;&emsp;&emsp;&emsp;
         <h3 style="display: inline-block;">
-            <a href="./number.html">Number CHECK</a>
+            <a href="./number.html">Number chick</a>
         </h3>
         &emsp;&emsp;&emsp;&emsp;
         <h3 style="display: inline-block;">
             <a href="./ticket.html">ticket</a>
+        </h3>
+        &emsp;&emsp;&emsp;&emsp;
+        <h3 style="display: inline-block;">
+            <a href="./week.html">week</a>
         </h3>
     </div>
     <!-- body -->
@@ -188,7 +197,7 @@
                     <img src="data:image/png;base64,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"
                         alt="">
                     <h4 class="ale">RESUME:</h4>
-                    <a href="./resume1.html" class="ctn">RESUME </a>
+                    <a href="./resume1.html" class="ctn">click </a>
                     <br>
                     <br>
 
@@ -219,7 +228,7 @@
                         alt="">
                     <h4 class="ale"> Keybord</h4>
 
-                    <a href="./keyborard.html" class="ctn">click me </a>
+                    <a href="./keybord.html" class="ctn">click me </a>
 
                 </div>
                 <div class="box">"
@@ -240,7 +249,7 @@
                         alt="">
                     <h4 class="ale">YOUTUBE PAGE :</h4>
 
-                    <a href="./youtubepage.html" class="ctn">Chick me </a>
+                    <a href="./youtubepage.html" class="ctn">chick me </a>
 
                 </div>
 
@@ -249,7 +258,7 @@
                         alt="">
                     <h4 class="ale">TABLE:</h4>
 
-                    <a href="./table2.html" class="ctn">Chick me </a>
+                    <a href="./table2.html" class="ctn">chick me </a>
 
                 </div>
 
