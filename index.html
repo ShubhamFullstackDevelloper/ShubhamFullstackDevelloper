@@ -17,6 +17,22 @@
             font-family: "Poppins", sans-serif;
         }
 
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+
         .main {
             display: grid;
             grid-template-columns: 1fr 4fr;
@@ -34,7 +50,7 @@
         body {
             height: 100vh;
             width: 100%;
-            background-image: url("https://e0.pxfuel.com/wallpapers/718/920/desktop-wallpaper-windows-gallery-90-plus-pic-wpw501781.jpg");
+            background-image: url("https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=ais    ");
             background-position: center;
             background-size: cover;
         }
@@ -77,7 +93,7 @@
             margin-left: 15px;
             display: none;
         }
-             
+
         .sidebar:hover .logo h2 {
             display: block;
         }
@@ -145,67 +161,69 @@
         .links .logout-link {
             margin-top: 20px;
         }
+
         .glow-on-hover {
-    width: 220px;
-    height: 70px;
-    border: none;
-    outline: none;
+            width: 220px;
+            height: 70px;
+            border: none;
+            outline: none;
+            
 
-    margin-left: 35%;
-    background:rgba(255, 0, 0, 0.459);
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    /* box-shadow: 10px 10px; */
-}
+            margin-left: 35%;
+            background: rgba(255, 0, 0, 0.384);
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            /* box-shadow: 10px 10px; */
+        }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
 
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
 
-}
+        }
 
-.glow-on-hover:active {
-    color: #67c6e394
-}
+        .glow-on-hover:active {
+            color: #67c6e394
+        }
 
-.glow-on-hover:active:after {
-    background: transparent;
-}
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
 
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #67c6e383;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #67c6e383;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -277,10 +295,9 @@
             </aside>
         </div>
         <div class="sec">
-            <h1> Your homepage is the digital front door to your website. It should immediately convey the purpose of
-                your site and reflect your brand's identity.</h1>
-                <a href="./homepage.html"> <button class="glow-on-hover"> CLICK HERE</button></a>
-                
+          
+            <a href="./homepage.html"> <button class="glow-on-hover" style=" margin-top: 40%;"> CLICK HERE</button></a>
+
         </div>
     </div>
 

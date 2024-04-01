@@ -3,9 +3,11 @@
 
 <head>
   <style>
+    /* css for body */
     body{
       background-color:#967E76;
     }
+    /* main con  */
     .main-container {
       background-color: rgb(31, 148, 198);
       width: 70vw;
@@ -17,14 +19,20 @@
       border-radius: 20px;
       box-shadow: 0px 0px 27px white;
     }
-
+    /* input con */
+    h1{
+      text-align: center;
+      font-size: 42px;
+      color: rgba(0, 0, 0, 0.581);
+    }
+/* input -box */
     .input-container {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
+/* display */
     .display {
       background-color: whitesmoke;
       width: 90%;
@@ -82,6 +90,7 @@
 
 <body style="margin: 0px"  >
   <div class="main-container">
+    <h1>Table</h1>
     <div class="display" id="display"></div>
     <div class="input-container">
       <input id="input" type="number" class="input-box" />

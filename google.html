@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Search Page</title>
+
+    <!--  CSS and Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./googlepagesss.css"> <!-- External CSS file -->
+    <!--  -->
+    <style>
+        /* Resetting default margin, padding, and background */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-family: 'Noto Sans HK', sans-serif;
+            color: #333;
+        }
+
+        /* Centering the main content vertically and horizontally */
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Styling for the Google logo or image */
+        .google {
+            width: 250px;
+            margin-top: 20px;
+        }
+
+        /* Styling for the search bar container */
+        .searchb {
+            width: 500px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        /* Styling for the input field */
+        input[type="text"] {
+            width: calc(100% - 50px);
+            height: 45px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 0 20px;
+            font-size: 16px;
+        }
+
+        /* Styling for the search icon */
+        .searchicon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 21px;
+            cursor: pointer;
+        }
+
+        /* Styling for the microphone icon */
+        .mic {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 20px;
+            cursor: pointer;
+        }
+
+        /* Styling for the search buttons container */
+        .sbutton {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Styling for the buttons */
+        button {
+            background: #f2f2f2;
+            border: none;
+            padding: 10px 25px;
+            margin: 10px;
+            color: #333;
+            border-radius: 5px;
+            outline: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for buttons */
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Styling for the results display area */
+        #results {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            float: right;
+            font-size: 15px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        /* Styling for the avatar image */
+        .avatar {
+            width: 35px;
+            border-radius: 50%;
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        /* Styling for navigation text */
+        .navtext {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        /* Hover effect for navigation text */
+        .navtext:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for the apps icon */
+        .apps {
+            font-size: 30px;
+            color: #333;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        /* Styling for language options */
+        h5 {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+    <!-- JavaScript file -->
+    <script>
+        function search() {
+            // Get the input value from the HTML input element with the id "searchInput"
+            let input = document.getElementById("searchInput").value.toLowerCase();
+
+            // Get the HTML element where search results will be displayed
+            let resultsDiv = document.getElementById("results");
+
+            // Array containing student names
+            let studentNames = [
+                "ayush lolusare",
+                "himanshu",
+                "yash",
+                "ayush nakade",
+                "nikhil",
+                "ratnesh",
+                "soundary",
+                "lucky",
+                "shubham dada",
+                "artharv",
+                "achal",
+                "yogesh sir"
+            ];
+
+            // Flags to track if a student or teacher is found
+            let foundStudent = false;
+            let foundTeacher = false;
+
+            // Loop through the student names array 
+            for (let name of studentNames) {
+                if (input.includes(name)) {
+                    foundStudent = true; // Set foundStudent to true 
+                    break; // Exit the loop early since a match is found
+                }
+            }
+
+            // Check if the input includes the name "yogesh sir" to determine 
+            if (input.includes('yogesh sir')) {
+                foundTeacher = true; // Set foundTeacher to true if "yogesh sir" is found
+            }
+
+
+            // Display the appropriate message based on search results 
+            if (foundStudent) {
+                if (foundTeacher) {
+                    resultsDiv.innerHTML = "<span style='color: black;'>This sir is teaching in Enjoy Programming.</span>";
+                } else {
+                    resultsDiv.innerHTML = "<span style='color: green;'>This student is a student of Enjoy Programming.</span>";
+                }
+            } else {
+                resultsDiv.innerHTML = "<span style='color: red;'>This student is not a student of Enjoy Programming.</span>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" class="navtext">Gmail</a>
+        <a href="#" class="navtext">Images</a>
+        <span class="material-icons apps">apps</span>
+        <img src="https://media.licdn.com/dms/image/D4D03AQGOb-byY9pKDg/profile-displayphoto-shrink_200_200/0/1695039203321?e=1717632000&v=beta&t=FPEA9RCW6JP6KN8LTyB7XvrD55Cc2cPyOW9OGzulJPQ"
+            alt="" class="avatar">
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main">
+        <img src="../../My_html_projects/accets/images/eennjooyy.png"
+            alt="" class="google"> <!-- Google logo or image -->
+
+        <!-- Search Bar -->
+        <div class="searchb">
+            <input type="text" id="searchInput"> <!-- Input field for search query -->
+            <i class="material-icons searchicon" onclick="search()">search</i> <!-- Search icon -->
+            <img src="miclogo.png" alt="" class="mic"> <!-- Microphone icon for voice search -->
+        </div>
+
+        <!-- Search Buttons -->
+        <div class="sbutton">
+            <button onclick="search()">Search</button> <!-- Button to trigger search function -->
+            <button onclick="feelingLucky()">I'm Feeling Lucky</button> <!-- Button for "I'm Feeling Lucky" feature -->
+
+            <!-- Language Options -->
+            <h5>Google offered in : हिन्दी বাংলা తెలుగు मराठी <br> தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</h5>
+        </div>
+
+        <!-- Results Display Area -->
+        <div id="results"></div> <!-- Placeholder for displaying search results -->
+    </div>
+</body>
+
+</html>
