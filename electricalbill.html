@@ -48,6 +48,8 @@
             font-size: 20px;
         }
 
+        /* headre */
+
         .header {
             text-align: center;
             color: #9BCF53;
@@ -55,6 +57,8 @@
             font-size: 42px;
 
         }
+
+        /* result id */
 
         #result {
             height: 400px;
@@ -66,14 +70,42 @@
             border: 3px solid rgba(0, 0, 0, 0.306);
             box-shadow: 3px 3px black;
         }
-    </style>
+           /* table */
+           table,
+        th,
+        td {
+            border-style: solid;
+            border-collapse: collapse;
+            height: 30px;
+            width: 80vw;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            border-color: #0b0e14ae;
+            color:pink;
+            background-color: rgba(33, 54, 49, 0.3);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          
+        }
 
+        legend {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1276554f;
+        }
+        table{
+            box-shadow: 10px 10px rgba(164, 17, 17, 0.481);
+        }
+    </style>
+    <!-- script -->
     <script>
+
         function calculateBill() {
+            //input//
             let units = document.getElementById('units').value;
 
             let bill = 0;
-
+            // condition of bill//
             if (units <= 50) {
                 bill = units * 0.5
             }
@@ -90,13 +122,16 @@
             if (bill > 251) {
                 bill = bill + bill * 0.2
             }
+            // output//
 
-            document.getElementById("result").innerText = "Total Bill: ₹" + bill;
+            document.getElementById("result").innerText = "Total Bill: ₹ " + bill;
         }
     </script>
 </head>
+<!-- body -->
 
 <body>
+    <!-- main container for elecrical bill -->
     <div class="billing-form">
         <h2 class="header"> Check Your Electrical Bill 🧾</h2>
         <div id="result"></div>
@@ -104,13 +139,50 @@
         <div class="display">
             <input type="number" id="units" placeholder="Enter units">
 
-       
-        <button onclick="calculateBill()">Calculate Bill</button>
+            <!-- fun call -->
+            <button onclick="calculateBill()">Calculate Bill</button>
         </div>
+        <table>
+            <legend>Charge Instruction</legend>
 
-        
-  
-   
+            <tr>
+                <th style="color:rgb(190, 235, 29);">Range in xs</th>
+                <th style="color: rgb(190, 235, 29);">Rate per x</th>
+                <th style="color:rgb(190, 235, 29);">Surpuls Usage Charge (In Percentage)</th>
+                <th style="color:rgb(190, 235, 29);">Late Fees</th>
+            </tr>
+            <tr>
+                <td>0 - 50</td>
+                <td>0.5</td>
+                <td>5%</td>
+                <td>After 10 days = 30rs</td>
+
+            </tr>
+            <tr>
+                <td>51 - 150</td>
+                <td>0.75</td>
+                <td>10%</td>
+                <td>After 20 days = 60rs</td>
+            </tr>
+            <tr>
+                <td>151 - 250</td>
+                <td>1.25</td>
+                <td>15%</td>
+                <td>After 25 days = 100rs</td>
+            </tr>
+            <tr>
+                <td>251</td>
+                <td>2.0</td>
+                <td>20%</td>
+                <td>After 60 days = 1000rs </td>
+            </tr>
+    </div>
+    </table>
+
+
+
+
+
 
     </div>
 
