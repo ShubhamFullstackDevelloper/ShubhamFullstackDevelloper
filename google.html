@@ -1,55 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
     <style>
         /* CSS for styling */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            /* Background color */
         }
 
         .container {
             max-width: 600px;
-            margin: 50px;
+            margin: 50px auto;
+            /* Centering the container */
             text-align: center;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Making container full height of the viewport */
         }
 
         h1 {
             font-size: 40px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Arial Black', sans-serif;
+            /* Google's font */
+            color: #1a0dab;
+            /* Google's font color */
+            margin-bottom: 30px;
+            /* Spacing below heading */
         }
 
         .search-input {
-            height: 40%;
-            width: 80%;
+            height: 40px;
+            width: 70%;
             padding: 10px;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin-bottom: 10px;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .search-input::placeholder {
+            color: #80868b;
         }
 
         .search-button {
-            padding: 10px 20px;
+            height: 40px;
+            padding: 0 16px;
             font-size: 16px;
-            background-color: #4caf4f40;
+            background-color: #1a73e8;
             color: white;
             border: none;
-            border-radius: 5px;
-            /* cursor: pointer; */
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #0d6efd;
         }
 
         .display-container {
-            height: 80%;
-            width: 80%;
+            height: 60px;
+            width: 70%;
             padding: 10px;
-            font-size: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 20%;
-            color: black;
-
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin-top: 20px;
+            color: #70757a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -57,54 +86,41 @@
 <body>
     <div class="container">
 
-        <form id="search-form">
-            <input type="text" id="search-bar" class="search-input" placeholder="Enter your search..." onclick="searchInput()">
-            <button type="submit" class="search-button" >Search</button>
+
+        <h1>Enjoy Programing Search</h1>
+
+        <form id="search-form" onsubmit="event.preventDefault(); searchInput();">
+            <input type="text" id="search-bar" class="search-input" placeholder="Search Google or type a URL">
+            <button type="submit" class="search-button">Students Search</button>
+
             <div class="display-container" id="display"></div>
         </form>
-
     </div>
 
     <script>
-
-
         function searchInput() {
-            //         // initialise
-
-            // getting the value from search bar
+            // Initialise
             let searchValue = document.getElementById("search-bar").value;
-            // //         // converted to lower case
             let converted = searchValue.toLowerCase();
-            let inputs = ["Priya", "Sumit", "Shivansh", "Veer", "Ruvit", "Nikita", "Prachi", "Rupali", "Ayush"];
+            let inputs = ["shubham", "ayush", "lucky", "yash", "priya", "shiwani", "pooja", "shardha"];
             let output = false;
 
-            // // // process
+            // Process
             for (let i = 0; i < inputs.length; i++) {
-                // inputs also converted to lower case
                 if (inputs[i].toLowerCase() === converted.toLowerCase()) {
-               
                     output = true;
-                    document.getElementById("display").style.backgroundColor = "red" ;
+                    document.getElementById("display").style.backgroundColor = "#ffc107";
                 }
             }
-            // output
 
-            if (output==true) {
-        
-                document.getElementById("display").innerHTML = "Student is found" ;
-                
+            // Output
+            if (output == true) {
+                document.getElementById("display").innerHTML = "Student is found";
             } else {
-                console.log("output",searchInput)
                 document.getElementById("display").innerHTML = "Student is not found";
             }
-
-
         }
-
-
-
-       </script>
-
+    </script>
 </body>
 
 </html>

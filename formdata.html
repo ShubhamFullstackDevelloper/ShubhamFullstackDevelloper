@@ -1,0 +1,177 @@
+
+<html>
+
+<head>
+    <title>Student Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./formdata.css">
+</head>
+
+<body>
+    <!-- PAGE ONE -->
+    <div id="page-one">
+        <!-- buttons -->
+        <div class="buttons">
+            <button onclick="dataFunction()">Student's Data Entry</button>
+            <button onclick="listFunction()">Student's List</button>
+        </div>
+        <div>
+            <!-- form -->
+            <!-- id="first-name" -->
+            <!-- id="last-name" -->
+            <form >
+                <fieldset>
+                    <legend>
+                        <h1 class="heading" style="text-decoration: underline;">ENJOY PROGRAMMING : ENTER YOUR DETAILS
+                        </h1>
+                    </legend>
+                    <label class="details" for="firstname"> FIRST
+                        NAME:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <input type="text" placeholder="Enter firstname" id="first-name"><br><br>
+                    <label class="details" for="lastname">LAST
+                        NAME:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <input type="text" placeholder="Enter lastname" id="last-name"><br><br>
+
+                    <!-- educational information -->
+                    <!-- id="Schooling" -->
+                    <!-- id="jr-college" -->
+                    <!-- id="graduation" -->
+                    <!-- id="post-graduation" -->
+                    <!-- id="phd" -->
+
+                    <label class="details" for="edu">Select your Education: &emsp;&emsp;</label>
+                    <input type="radio" for="edu" name="education" id="Schooling">
+                    <label for="education" >Schooling</label>
+                    <input type="radio" for="education" name="education" id="jr-college">
+                    <label for="education" >Jr. College</label>
+                    <input type="radio" for="education" name="education" id="graduation">
+                    <label  for="education">Graduation</label>
+                    <input type="radio" for="education" name="education" id="post-graduation">
+                    <label for="education" >Post-Graduation</label>
+                    <input type="radio" for="education" name="education" id="phd">
+                    <label for="education" >Ph.D</label><br><br>
+
+
+
+
+
+
+                    <!-- personal information -->
+                    <!-- id="age" -->
+                    <label class="details" for="age">Date of Birth:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <input type="date" id="age"><br><br>
+
+                    <!-- email -->
+                    <!-- id="email-id" -->
+                    <label for="email"
+                        class="details">Email:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <input type="text" placeholder="enter your email" id="email-id">
+                    <br><br>
+                    <!-- phone number -->
+                    <!-- id="contact-no" -->
+                    <label class="details" for="number">Contact No.:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <select name="number" id="nation">
+                        <option value="+91Ind">+91</option>
+                        <option value="+1USA">+1</option>
+                        <option value="+44UK">+44</option>
+                        <option value="+61AUS">+61</option>
+                        <option value="+81JAP">+81</option>
+                    </select><input type="number" number="[0,9]{10}" id="contact-no"><br><br>
+
+                    <!-- address -->
+                    <!-- id="address-l1" -->
+                    <!-- id="address-l2" -->
+                    <!-- id="address-l3" -->
+                    <label for="address" class="details">Address :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                    <input type="text"  placeholder="Address Line 1" id="address-l1"> <br> <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" id=""
+                        placeholder="Address Line 2" id="address-l2"> <br> <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;<input type="text" id=""
+                        placeholder="Address Line 3" id="address-l3">
+                    <br><br>
+                    <!-- submit -->
+                    <input type="submit" onclick="submitFunction()">
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- page-two -->
+    <!-- buttons -->
+    <div class="page-two" id="show">
+        <div class="buttons">
+            <button onclick="dataFunction()">Student's Data Entry</button>
+            <button onclick="listFunction()">Student's List</button>
+        </div>
+        <table>
+            <!-- Table Caption -->
+            <caption>
+                <h1> Students' Information</h1>
+            </caption>
+            <tbody class="table-style">
+                <!-- Table Heading -->
+                <tr class="td">
+                    <th colspan="2" class="td" >Sr. No./Roll No.</th>
+                    <th class="td">Student Name</th>
+                    <th class="td">Contact Number</th>
+                    <th class="td">DOB</th>
+                    <th class="td">Education Details</th>
+                    <th class="td">Email-Id</th>
+                    <th class="td">Address</th>
+                </tr>
+                <!-- first row -->
+                <tr class="td">
+                    <td class="tr">1.</td>
+                    <td class="tr">001</td>
+                    <td class="tr" id="name"></td>
+                    <td class="tr" id="contact"></td>
+                    <td class="tr" id="date"></td>
+                    <td class="tr" id="education"></td>
+                    <td class="tr" id="mail">
+                        <p class="par1"></p>
+                    </td>
+                    <td class="tr" id="address"></td>
+                </tr>
+                <!-- 2nd row -->
+                <tr class="td">
+                    <td class="tr">2.</td>
+                    <td class="tr">002</td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr">
+                        <p class="par1"></p>
+                    </td>
+                    <td class="tr" id=""></td>
+                </tr>
+                <!-- 3rd row -->
+                <tr class="td">
+                    <td class="tr">3.</td>
+                    <td class="tr">003</td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr"></td>
+                    <td class="tr">
+                        <p class="par1"></p>
+                    </td>
+                    <td class="tr" id=""></td>
+                </tr>
+            </tbody>
+           
+            
+        </table>
+    </div>
+    <script src="form.js">
+    </script>
+</body>
+
+</html>
