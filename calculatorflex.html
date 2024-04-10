@@ -3,10 +3,17 @@
 
 <head>
     <style>
+        /* body */
+        body{
+            background-image: url("../Accets/images/calucalator.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* main */
         .main {
             display: grid;
             grid-template-rows: 1fr 3fr;
-            background-color: aqua;
             height: 35vw;
             width: 30%;
             border: solid;
@@ -17,24 +24,25 @@
 
 
         }
+        /* top box display */
 
         .frist-box {
-            background-color: grey;
+            background-color: rgba(193, 19, 19, 0.589);
 
         }
 
-        .sec-box {
-            background-color: brown;
-        }
 
+        
+/* innner boxxx */
         .inner-box {
-            height: 25%;
+            height: 19.89%;
             width: 100%;
             display: flex;
             flex-direction: row;
 
-            background-color: rgb(29, 28, 27);
+            background-color: rgba(140, 87, 34, 0.32);
         }
+        /* innner top */
 
         .inner-one {
             background-color: rgb(52, 37, 39);
@@ -47,21 +55,24 @@
             text-align: center;
             border: solid black;
         }
-
+/* last row */
         .last-row {
-            background-color: #FF8911;
+            background-color: #ff8811ef;
             display: flex;
             justify-content: center;
             align-items: center;
 
         }
+        /* button */
 
         button {
             background-color: #282522;
             height: 100%;
             width: 100%;
             color: white;
+            font-size: 20px;
         }
+        /* id diplay */
 
         #display {
             font-size: 22px;
@@ -69,8 +80,60 @@
             text-align: right;
             border-radius: 1%;
             border: solid black 2px;
+            font-size: 42px;
         }
     </style>
+    
+</head>
+
+<body>
+    <!-- main sec -->
+    <div class="main">
+        <!-- frist box -->
+        <div class="frist-box" id="display"></div>
+        <!-- second box -->
+        <div class="sec-box">
+            <div class="inner-box">
+                <div class="inner-one  " onclick="clearfunction()"><button class="last-row">AC</button></div>
+                <div class="inner-one" onclick="displayFuction()"><button class="last-row">+/-</button></div>
+                <div class="inner-one" onclick="displayFuction11()"><button class="last-row">%</button></div>
+                <div class="inner-one last-row" onclick="div()"> <button class="last-row">/</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(7)"><button>7</button></div>
+                <div class="inner-one" onclick="numberTyped(8)"><button>8</button></div>
+                <div class="inner-one" onclick="numberTyped(9)"><button>9</button></div>
+                <div class="inner-one last-row" onclick="mult()"><button class="last-row">*</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one"><button onclick="numberTyped(4)">4</button></div>
+                <div class="inner-one" onclick="numberTyped(5)"><button>5</button></div>
+                <div class="inner-one" onclick="numberTyped(6)"><button>6</button></div>
+                <div class="inner-one last-row" onclick="minus()"><button class="last-row">-</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(3)"><button>3</button></div>
+                <div class="inner-one" onclick="numberTyped(2)"><button>2</button></div>
+                <div class="inner-one" onclick="numberTyped(1)"><button>1</button></div>
+                <div class="inner-one last-row" onclick="add()"><button class="last-row">+</button></div>
+
+            </div>
+            <div class="inner-box">
+                <div class="inner-one" onclick="numberTyped(0)"><button>0</button></div>
+                <div class="inner-one" style="width: 50%;" onclick="point()"><button>.</button></div>
+                <div class="inner-one last-row" style="width: 50%;" onclick="showresult()"><button class="last-row">=</button></div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
     <script>
         let total = 0;
         let displayString = ""
@@ -142,56 +205,9 @@
 
     </script>
 
-</head>
-
-<body>
-    <!-- main sec -->
-    <div class="main">
-        <div class="frist-box" id="display"></div>
-        <div class="sec-box">
-            <div class="inner-box">
-                <div class="inner-one" onclick="clearfunction()"><button>AC</button></div>
-                <div class="inner-one" onclick="displayFuction()"><button>+/-</button></div>
-                <div class="inner-one" onclick="displayFuction11()"><button>%</button></div>
-                <div class="inner-one last-row" onclick="div()"> <button class="last-row">/</button></div>
-
-            </div>
-            <div class="inner-box">
-                <div class="inner-one" onclick="numberTyped(7)"><button>7</button></div>
-                <div class="inner-one" onclick="numberTyped(8)"><button>8</button></div>
-                <div class="inner-one" onclick="numberTyped(9)"><button>9</button></div>
-                <div class="inner-one last-row" onclick="mult()"><button class="last-row">*</button></div>
-
-            </div>
-            <div class="inner-box">
-                <div class="inner-one"><button onclick="numberTyped(4)">4</button></div>
-                <div class="inner-one" onclick="numberTyped(5)"><button>5</button></div>
-                <div class="inner-one" onclick="numberTyped(6)"><button>6</button></div>
-                <div class="inner-one last-row" onclick="minus()"><button class="last-row">-</button></div>
-
-            </div>
-            <div class="inner-box">
-                <div class="inner-one" onclick="numberTyped(3)"><button>3</button></div>
-                <div class="inner-one" onclick="numberTyped(2)"><button>2</button></div>
-                <div class="inner-one" onclick="numberTyped(1)"><button>1</button></div>
-                <div class="inner-one last-row" onclick="add()"><button class="last-row">+</button></div>
-
-            </div>
-            <div class="inner-box">
-                <div class="inner-one" onclick="numberTyped(0)"><button>0</button></div>
-                <div class="inner-one" style="width: 50%;" onclick="point()"><button>.</button></div>
-                <div class="inner-one last-row" style="width: 50%;" onclick="showresult()"><button>=</button></div>
-
-
-            </div>
-
-
-
-
-        </div>
-    </div>
 
 
 </body>
+
 
 </html>
