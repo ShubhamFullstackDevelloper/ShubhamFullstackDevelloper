@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,13 +18,13 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            
+
         }
 
 
 
         header {
-            background-color: #94151581;
+            background-color: #9415157d;
             color: #fff;
             padding: 20px;
 
@@ -199,7 +202,7 @@
 
 
 
-
+        /* footer box */
 
         .foooter-bar {
             background-color: #55acee;
@@ -208,6 +211,85 @@
             width: 100px;
             border: solid 2px rgba(0, 0, 0, 0.323);
         }
+
+        @media only screen and (max-width: 768px) {
+
+            /* Adjust styles for tablets */
+            h1 {
+                font-size: 32px;
+                /* Smaller text for smaller screens */
+            }
+
+            .project {
+                width: calc(50% - 20px);
+                /* Adjust project card width */
+            }
+
+            .projects {
+                justify-content: center;
+                /* Center projects container */
+            }
+
+            img {
+                height: 150px;
+                width: 150px;
+                /* Adjust image size */
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            /* Adjust styles for mobile phones */
+            h1 {
+                font-size: 24px;
+                /* Even smaller text for mobile screens */
+            }
+
+            .project {
+                width: calc(100% - 40px);
+                /* Full width project cards */
+                margin: 10px;
+                /* Adjust margin */
+            }
+
+            .projects {
+                flex-direction: column;
+                /* Stack projects vertically */
+            }
+
+            img {
+                height: 80px;
+                width: 50px;
+                /* Smaller images for mobile screens */
+            }
+        }
+
+        @media only screen and (max-width: 337px) {
+
+            /* Adjust styles for mobile phones */
+            h1 {
+                font-size: 24px;
+                /* Even smaller text for mobile screens */
+            }
+
+            .project {
+                width: calc(100% - 40px);
+                /* Full width project cards */
+                margin: 10px;
+                /* Adjust margin */
+            }
+
+            .projects {
+                flex-direction: column;
+                /* Stack projects vertically */
+            }
+
+            img {
+                height: 50px;
+                width: 50px;
+                /* Smaller images for mobile screens */
+            }
+        }
     </style>
 </head>
 
@@ -215,7 +297,7 @@
     <!-- body -->
     <header>
 
-        <h1>Welcome to My Projects</h1>
+        <h1>Welcome To My Projects</h1>
 
         <body>
             <div class="social-buttons">
