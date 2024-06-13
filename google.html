@@ -8,78 +8,73 @@
     <style>
         /* CSS for styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            /* Background color */
-        }
+font-family: Arial, sans-serif;
+background-color: #f2f2f2; /* Background color */
+}
 
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            /* Centering the container */
-            text-align: center;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            /* Making container full height of the viewport */
-        }
+.container {
+max-width: 600px;
+margin: 50px auto; /* Centering the container */
+text-align: center;
+display: grid;
+justify-content: center;
+align-items: center;
+height: 100vh; 
+}
 
-        h1 {
-            font-size: 40px;
-            font-family: 'Arial Black', sans-serif;
-            /* Google's font */
-            color: #1a0dab;
-            /* Google's font color */
-            margin-bottom: 30px;
-            /* Spacing below heading */
-        }
+h1 {
+font-size: 40px;
+font-family: 'Arial Black', sans-serif;
+color: #1a0dab; 
+margin-bottom: 30px; 
+}
 
-        .search-input {
-            height: 40px;
-            width: 70%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #dfe1e5;
-            border-radius: 24px;
-            margin-bottom: 10px;
-            outline: none;
-            box-shadow: none;
-        }
+.search-input {
+height: 40px;
+width: 70%;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #dfe1e5;
+border-radius: 24px;
+margin-bottom: 10px;
+outline: none;
+box-shadow: none;
+}
 
-        .search-input::placeholder {
-            color: #80868b;
-        }
+.search-input::placeholder {
+color: #80868b;
+}
 
-        .search-button {
-            height: 40px;
-            padding: 0 16px;
-            font-size: 16px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 24px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+.search-button {
+height: 40px;
+padding: 0 16px;
+font-size: 16px;
+background-color: #1a73e8;
+color: white;
+border: none;
+border-radius: 24px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
 
-        .search-button:hover {
-            background-color: #0d6efd;
-        }
+.search-button:hover {
+background-color: #0d6efd;
+}
 
-        .display-container {
-            height: 60px;
-            width: 70%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #dfe1e5;
-            border-radius: 24px;
-            margin-top: 20px;
-            color: #70757a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.display-container {
+height: 60px;
+width: 70%;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #dfe1e5;
+border-radius: 24px;
+margin-top: 20px;
+color: #70757a;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+}
     </style>
 </head>
 
@@ -87,7 +82,7 @@
     <div class="container">
 
 
-        <h1>Enjoy Programing Search</h1>
+        <h1>Enjoy Programming Search</h1>
 
         <form id="search-form" onsubmit="event.preventDefault(); searchInput();">
             <input type="text" id="search-bar" class="search-input" placeholder="Search Google or type a URL">

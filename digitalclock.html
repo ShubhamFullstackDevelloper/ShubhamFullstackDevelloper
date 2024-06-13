@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to top, #c9ffbf, #ffafbd);
+            height: 100vh;
+        }
+
+        .container {
+            color: #47cf73;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            width: 400px;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #digital-clock {
+            color: black;
+            font-size: 64px;
+            border-radius: 5px;
+            box-shadow: 0 15px 30px black;
+            background-color: white;
+            padding: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Digital Clock</h1>
+        <div id="digital-clock"></div>
+    </div>
+    <script>
+       const clock = document.getElementById("digital-clock");
+setInterval(() => {
+const date = new Date();
+// Specify 12-hour format with AM/PM
+const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+clock.innerHTML = date.toLocaleTimeString('en-US', options);
+}, 1000);
+
+    </script>
+</body>
+
+</html>
