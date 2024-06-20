@@ -4,122 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket</title>
+    <title>Ticket Booking</title>
     <style>
-        body{
-            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20231011/pngtree-vibrant-3d-render-illustrating-yellow-and-black-movie-tickets-image_13595291.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        body {
+            background-image: url("https://th.bing.com/th/id/OIG2.lBZ_Pi3clU.c_qp6AXXy?w=270&h=270&c=6&r=0&o=5&pid=ImgGn");
+          font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-      
-        /* main container */
+
         .main-container {
-            height: 80vh;
-            width: 50vw;
-            background-image:url("https://static.vecteezy.com/system/resources/previews/030/508/525/non_2x/square-background-from-cinema-elements-camera-popcorn-3d-glasses-ticket-template-for-show-schedule-advertisement-social-media-vector.jpg");
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10%;
-            margin-left: 10%;
-
-
+            width: 90vw;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        /* inner container */
-        .inner-container {
-            height: 55vh;
-            width: 100%;
-          
-        }
-
-        /* display */
 
         .display {
-            
-            margin-left: 25%;
-            margin-top: 10px;
-            height: 80px;
-            width: 200px;
-            border-style: groove;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
             text-align: center;
-            color: #FB6D48;
-            font-size: 30px;
-            text-shadow: 3px 3px black;
-            background-color: #76885b6f;
+            color: #333;
+            font-size: 24px;
+            background-color: #fff;
+            width: 80%;
         }
 
-        /* input section */
         .input-section {
-            height: 50px;
-            width: 400px;
-            background-color: #eabe6c74;
-            margin-left: 40%;
-            margin-top: 3%;
-
-
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: centre;
         }
-
-        /* button */
 
         button {
-            height: 50px;
-            width: 400px;
-            background-color: #0f8d7269;
-            margin-left: 40%;
-            margin-top: 3%;
-
-            text-align: center;
+            width: 85%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #5cb85c;
             color: white;
-
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-container {
+                width: 80vw;
+            }
+        }
     </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display" id="display"></div>
+        <input class="input-section" placeholder="Type your age here" type="number" id="number">
+        <button onclick="arithmatic()">Check Ticket Price</button>
+        <button onclick="clearfunction()">Clear</button>
+    </div>
     <script>
         function arithmatic() {
             let x = document.getElementById("number").value;
             let output;
             let age = Number(x);
             if (age < 17 || age > 70) {
-
-                output = "HALF  TICKET";
-            }
-            else {
+                output = "HALF TICKET";
+            } else {
                 output = "FULL TICKET";
             }
-            
             document.getElementById("display").innerHTML = output;
         }
-
         function clearfunction() {
             document.getElementById("display").innerHTML = "";
-
         }
-
-
     </script>
-
-</head>
-
-<body>
-    <!-- main container -->`
-    <div class="main-container">
-        <!-- display -->
-        <div class="display" id="display"></div>
-        <!-- inner container -->
-        <div class="inner-container">
-
-            <input class="input-section" type="number" id="number">
-            <button onclick="arithmatic()">Click here</button>
-            <button onclick="clearfunction()">Clear</button>
-
-        </div>
-    </div>
 </body>
 
 </html>
