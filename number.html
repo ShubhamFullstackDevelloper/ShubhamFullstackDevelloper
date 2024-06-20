@@ -1,125 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natural Number </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Assets/images/numberproject.jpg" />
+    <title>Natural Number</title>
     <style>
-        /* main container */
-        body{
-            background-image: url("https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .main-container {
-            height: 80vh;
-            width: 50vw;
-          background-image: url("https://thumbs.dreamstime.com/b/d-render-abstract-paper-shapes-background-bright-colorful-sliced-layers-purple-waves-hills-equalizer-d-render-abstract-paper-144936287.jpg");
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-radius: 10%;
-            margin-left: 10%;
-            box-shadow: 10px 10px 10px   black;
-       
-        }
+      /* main container */
+      body {
+        background-image: url("./Assets/images/numberproject.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        /* inner container */
-        .inner-container {
-            height: 25vh;
-            width: 80%;
-            background-color: #FFCF81;
-            margin-left: 10%;
-            box-shadow: 10px 10px 10px black;
-            font-size: 25px;
-            
+      .main-container {
+        height: 80vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10%;
+        box-shadow: 5px 8px 10px 10px black;
+      }
 
-        }
+      .inner-container {
+        height: 25vh;
+        width: 90%; /* Adjusted for consistency */
+        background-color: #d9d2c8a3;
+        margin: auto; /* Centered horizontally */
+        box-shadow: 10px 10px 10px black;
+        font-size: 25px;
+      }
 
-        /* display */
+      .display {
+        background-color: rgba(88, 189, 60, 0.327);
+        height: 15vh;
+        width: 30vw;
+        margin: 20px auto; /* Centered horizontally and added vertical margin */
+        padding: 20px;
+        border-style: groove;
+        text-align: center;
+        border: 3px solid black;
+        box-shadow: 10px 10px 10px black;
+      }
 
-        .display {
-            background-color: rgba(88, 189, 60, 0.327);
-            height: 15vh;
-            width: 50%;
-            margin-left: 160px;
-            padding: 20px;
-            border-style: groove;
-            text-align: center;
-            border: 3px solid black;
-            box-shadow: 10px 10px 10px black;
-         
+      button {
+        height: 5vh;
+        width: 40vw;
+        background-color: #7ee675f7;
+        margin: 5px auto; 
+        text-align: center;
+        color: rgba(30, 28, 28, 0.83);
+        box-shadow: 10px 10px 10px black;
+        font-size: 25px;
+        border: 2px solid black;
+      }
+      input{
+        height: 5vh;
+        width: 40vw;
+        background-color: #d2dae6f4;
+        margin: 5px auto; 
+        text-align: center;
+        color: rgba(39, 34, 34, 0.899);
+        box-shadow: 10px 10px 10px black;
+        font-size: 25px;
+        border: 2px solid black;
 
-        }
-
-       
-
-        /* button */
-
-        button {
-            height: 50px;
-            width: 400px;
-            background-color: #00214d6d;
-            margin-left: 4%;
-            margin-top: 3%;
-            margin-left: 120px;
-            text-align: center;
-            color: rgba(155, 44, 44, 0.429);
-            box-shadow: 10px;
-            margin-top: 10px;
-            font-size: 25px;
-            border: 2px solid black;
-            
-            
-
-        }
+      }
     </style>
-    <script>
-        function naturalFunction() {
-            let x = Number(prompt("ENTER THE NUMBER:"))
+  </head>
 
-            let output;
-            if (x > 0) {
-                output = "THE NUMBER IS POSITIVE"
-
-            }
-            else if (x < 0) {
-                output = "THE NUMBER IS NEGATIVE"
-            }
-            else {
-                output = "THE NUMBER IS ZERO"
-
-            }
-            document.getElementById("display").innerHTML = output;
-
-        }
-        //   clear function
-        function clearfunction() {
-            document.getElementById("display").innerHTML = "";
-
-        }
-
-
-    </script>
-
-</head>
-
-<body>
+  <body>
     <!-- main container -->`
     <div class="main-container">
-        <!-- display -->
-        <div class="display" id="display"></div>
-        <!-- inner container -->
-        <div class="inner-container">
-
-
-            <button onclick="naturalFunction()">Click here</button>
-            <button onclick="clearfunction()">Clear</button>
-
-        </div>
+      <!-- display -->
+      <div class="display" id="display"></div>
+      <!-- inner container -->
+      <div class="inner-container">
+        <input
+          type="text"
+          id="number"
+          placeholder="type no.here to check number possitive or negative"
+        />
+        <button onclick="naturalFunction()">Click here</button>
+        <button onclick="clearfunction()">Clear</button>
+      </div>
     </div>
-</body>
+    <script>
+      function naturalFunction() {
+        let x = Number(document.getElementById("number").value);
 
+        let output;
+        if (x > 0) {
+          output = "THE NUMBER IS POSITIVE";
+        } else if (x < 0) {
+          output = "THE NUMBER IS NEGATIVE";
+        } else {
+          output = "THE NUMBER IS ZERO";
+        }
+        document.getElementById("display").innerHTML = output;
+      }
+      //   clear function
+      function clearfunction() {
+        document.getElementById("display").innerHTML = "";
+      }
+    </script>
+  </body>
 </html>
