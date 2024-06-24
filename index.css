@@ -10,7 +10,7 @@
 
 
    header {
-       background-color:#6B8A7A;
+       background-color: #6B8A7A;
        color: #fff;
        padding: 20px;
 
@@ -195,6 +195,18 @@
    .social-button--skype::after {
        background: #40A2E3;
    }
+   .fa-sharp{
+    color: #F4CE14;
+
+   }
+   .social-button--mail::after{
+    background: #e5d99d83;
+   }
+
+
+
+   
+
 
 
 
@@ -244,7 +256,7 @@
        .project {
            width: calc(100% - 40px);
            /* Full width project cards */
-       
+
            /* Adjust margin */
        }
 
@@ -271,7 +283,7 @@
        .project {
            width: calc(100% - 40px);
            /* Full width project cards */
-  
+
            /* Adjust margin */
        }
 
@@ -286,4 +298,3 @@
            /* Smaller images for mobile screens */
        }
    }
- 
