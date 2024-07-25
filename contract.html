@@ -20,7 +20,6 @@
         }
 
         body {
-
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -36,29 +35,30 @@
             <div class="row">
                 <div class="col-md-6 contact-info">
                     <h4>Our Address</h4>
-                    <p> katol, Nagpur, Maharashtra, India</p>
+                    <p>Katol, Nagpur, Maharashtra, India</p>
                     <h4>Email Us</h4>
-                    <p>info@myclothcare.com</p>
+                    <p><a href="mailto:info@myclothcare.com">info@myclothcare.com</a></p>
                     <h4>Call Us</h4>
                     <p>+91 8698521857</p>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -70,6 +70,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+      
+            console.log(`Message sent to management:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+
+      
+            alert('Your message has been sent successfully!');
+
+       
+            document.getElementById('contactForm').reset();
+        });
+    </script>
 </body>
 
 </html>
