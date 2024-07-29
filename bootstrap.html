@@ -26,9 +26,10 @@
       padding: 0px;
 
     }
-    body{
+
+    body {
       background-color: #46C2CB;
-      background: linear-gradient(#46C2CB,#9F73AB,#F2F7A1);
+      background: linear-gradient(#FFB4C2,#46C2CB, #9F73AB, #F2F7A1);
 
     }
 
@@ -66,13 +67,13 @@
 
     /* main  */
     .main {
-      height: 60vh;
+      height: 70vh;
       width: 100vw;
       display: grid;
       grid-template-columns: 4fr 0.5fr;
       margin-left: 0px;
       background: red;
-      background: linear-gradient(red, orange);
+      background: linear-gradient(#FFF078,  rgba(219, 31, 31, 0.891), orange);
       text-shadow: 2px 0px 5px rgb(194, 143, 143);
 
     }
@@ -90,7 +91,7 @@
       width: 400px;
       border-radius: 50%;
       border: 2px solid black;
-      box-shadow: rgba(221, 139, 191, 0.351) 5px 5px, rgba(174, 118, 153, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .inner-heading {
@@ -102,6 +103,9 @@
     }
 
     .img-fluid {
+      height: 500px;
+      width: 500px;
+      border-radius: 10%;
       box-shadow: rgb(34, 121, 214) 0px 20px 30px -10px;
     }
 
@@ -276,6 +280,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      gap: 15px;
 
 
     }
@@ -332,6 +337,11 @@
 
     .step-body p {
       margin: 0;
+    }
+
+    /* ex css */
+    .section-content {
+      margin-top: 30px;
     }
 
     /* footer logo */
@@ -391,7 +401,7 @@
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">MY CLOTH CARE</a>
+      <a class="navbar-brand" href="#"><span style="color: #E9FF97;">MY CLOTH CARE</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -439,7 +449,7 @@
   <!-- middle sec -->
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="margin-left: 25px;">
     <div class="col-10 col-sm-8 col-lg-6">
-      <img src="./clothcare.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+      <img src="./clothcare.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
         loading="lazy">
     </div>
     <div class="col-lg-6">
@@ -650,6 +660,66 @@
 
 
   <!-- end ex -->
+  <!-- exmple start -->
+  <div>
+    <!-- location -->
+    <a href="">
+      <div class="section-content container py-19 py-lg-20">
+        <div class="row vertical-divider-light">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0">
+              <div class="card-body py-17 px-10 text-center">
+
+                <a class="text-body-secondary" href=""> <img src="geo-alt.svg" width="50px" height="50px" /></a>
+
+                <div
+                  class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+                  location</div>
+                <p class="mb-0 text-body">Opp shivneri bar sawargao road sushila puram Katol <br> 441302</p>
+              </div>
+            </div>
+          </div>
+    </a>
+    <!-- contact -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card border-0">
+        <div class="card-body py-17 px-10 text-center">
+          <a class="text-body-secondary" href=""> <img src="telephone-fill.svg" width="50px" height="50px" /></a>
+          <div
+            class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+            Mobile phone</div>
+          <p class="mb-0 text-body">+91 8698521857</p>
+        </div>
+      </div>
+    </div>
+    <!-- time -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card border-0">
+        <div class="card-body py-17 px-10 text-center">
+          <a class="text-body-secondary" href=""> <img src="alarm-fill.svg" width="50px" height="50px" /></a>
+          <div
+            class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+            Working hours</div>
+          <p class="mb-0 text-body">10:00 AM - 9:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <!-- email -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card border-0">
+        <div class="card-body py-17 px-10 text-center">
+          <a class="text-body-secondary" href=""> <img src="email.svg" width="50px" height="50px" /></a>
+          <div
+            class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+            Email</div>
+          <p class="mb-0 text-body"><br>myclothcare@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- exmple end -->
   <!-- footer -->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
