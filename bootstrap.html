@@ -26,15 +26,35 @@
       padding: 0px;
 
     }
+    body{
+      background-color: #46C2CB;
+      background: linear-gradient(#46C2CB,#9F73AB,#F2F7A1);
+
+    }
 
     .fw-bold {
       color: #FFDE4D;
+      text-decoration: underline;
+
+    }
+
+    .btn-outline-success {
+      color: green !important;
     }
 
     .carousel-inner {
       height: 500px;
       width: 50vw;
       margin-left: 25%;
+    }
+
+    .m-md-3 {
+      margin: 0rem !important;
+      margin-top: 0rem !important;
+    }
+
+    .mb-4 {
+      margin-bottom: 0rem !important;
     }
 
     .container {
@@ -44,13 +64,20 @@
       gap: 10px;
     }
 
+    /* main  */
     .main {
-      height: 70vh;
+      height: 60vh;
       width: 100vw;
       display: grid;
       grid-template-columns: 4fr 0.5fr;
+      margin-left: 0px;
+      background: red;
+      background: linear-gradient(red, orange);
+      text-shadow: 2px 0px 5px rgb(194, 143, 143);
+
     }
 
+    /* image of logo  */
     .img-sec {
       display: flex;
       justify-content: center;
@@ -66,6 +93,14 @@
       box-shadow: rgba(221, 139, 191, 0.351) 5px 5px, rgba(174, 118, 153, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     }
 
+    .inner-heading {
+      color: #FFD35A !important;
+      text-decoration: underline;
+
+
+
+    }
+
     .img-fluid {
       box-shadow: rgb(34, 121, 214) 0px 20px 30px -10px;
     }
@@ -75,6 +110,10 @@
     }
 
     /* faq */
+    .faq-heading {
+      color: #ffd000d0;
+      text-shadow: 5px 2px 2px rgb(0, 0, 0);
+    }
 
     .faq-container {
       max-width: 600px;
@@ -83,6 +122,7 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 5%;
     }
 
     .faq {
@@ -115,6 +155,54 @@
     .faq.open .faq-answer {
       display: block;
     }
+
+    /* card sec css */
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #f8f9fa;
+    }
+
+    /* Card hover effect */
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card header styling */
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      border-bottom: 1px solid #ddd;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    /* Card title styling */
+    .card-title {
+      font-size: 2rem;
+      color: #464343;
+    }
+
+    /* List styling */
+    .list-unstyled li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Button styling */
+    .btn-outline-primary {
+      border-color: #007bffdb;
+      color: #007bff;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
 
     /* Media Queries */
     @media (max-width: 768px) {
@@ -163,6 +251,108 @@
       .faq-container {
         width: 100%;
         padding: 10px;
+      }
+
+    }
+
+    /* policy */
+    /* Center the heading */
+    .customer-reviwe {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      margin-top: 10% !important;
+    }
+
+    h2.text-center {
+      text-align: center !important;
+      margin-bottom: 2rem !important;
+    }
+
+    /* Style the steps */
+    .steps {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+    }
+
+
+
+    .step {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+
+    }
+
+    .step:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .step-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+    }
+
+    .step-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .step-body h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.text-center {
+      color: #FFDE4D;
+      text-decoration: underline;
+      text-shadow: 5px 2px 2px black;
+    }
+
+    .step-body p {
+      margin: 0;
+    }
+
+    /* footer logo */
+    .footer-image {
+      margin-right: 20px;
+    }
+
+    /* Customer reviwe */
+
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+      }
+
+      .step-body {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .step-body img {
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -218,10 +408,14 @@
             <a class="nav-link active" aria-current="page" href="./contract.html"> Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <!-- order -->
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a href="./order.html">
+
+            <button type="button" class="btn btn-outline-success">ORDER</button>
+          </a>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -233,15 +427,10 @@
       <h1 class="display-3 fw-bold" style="font-family: Edu AU VIC WA NT Hand, cursive; white-space: nowrap;">MY CLOTH
         CARE</h1>
       <h3 class="fw-normal text-muted mb-3">Your Trusted Partner for Laundry and Ironing Services</h3>
-      <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a href="./order.html">
 
-          <button type="button" class="btn btn-outline-success">ORDER</button>
-        </a>
-      </div>
     </div>
     <div class="img-sec">
-      <img src="./sagarimg.png" alt="sagar img" class="img-sagar">
+      <img src="./clothcare.jpg" alt="sagar img" class="img-sagar">
     </div>
   </div>
 
@@ -254,7 +443,7 @@
         loading="lazy">
     </div>
     <div class="col-lg-6">
-      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">MY CLOTH CARE</h1>
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 inner-heading">MY CLOTH CARE</h1>
       <p class="lead">To provide best-in-class laundry room operations to our customers by delivering superior quality
         and service.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -302,9 +491,8 @@
           <h1 class="card-title pricing-card-title">RS 10<small class="text-body-secondary fw-light">/CLOTH</small></h1>
           <ul class="list-unstyled mt-3 mb-4">
             <li>Tumble dry on low heat or</li>
-            <li> Hang dry.</li>
+            <li>Hang dry.</li>
             <li>Medium heat</li>
-
           </ul>
           <a href="./order.html">
             <button type="button" class="w-100 btn btn-lg btn-outline-primary">ORDER</button>
@@ -334,9 +522,96 @@
       </div>
     </div>
   </div>
+
+  <div class="customer-reviwe">
+
+    <h2 class="h1 text-center pb-3 pb-md-0 mb-md-5">How Does Our Service Work?</h2>
+
+    <section class=" policy pt-4 pt-lg-0 pb-4 pb-lg-5">
+
+      <div class="steps">
+        <div class="step pt-0 pt-md-3 pb-5">
+          <div class="step-number">
+            <div class="step-number-inner">1</div>
+          </div>
+          <div class="step-body d-flex align-items-center ps-xl-5">
+            <div class="rellax d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5"
+              data-rellax-speed="-0.3" data-disable-parallax-down="lg">
+              <img
+                src="https://img.lovepik.com/free-png/20211213/lovepik-laundry-clothes-drying-clothes-elements-png-image_401561720_wh1200.png"
+                class="d-dark-mode-none" width="306" alt="Illustration">
+
+            </div>
+            <div class="rellax ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4"
+              data-disable-parallax-down="lg">
+              <h3 class="h4">Choose Your Service</h3>
+              <p class="mb-0">Select the type of cloth care service you need from our wide range of options.</p>
+            </div>
+          </div>
+        </div>
+        <div class="step pt-0 pt-md-4 pb-5">
+          <div class="step-number">
+            <div class="step-number-inner">2</div>
+          </div>
+          <div class="step-body d-flex align-items-center ps-xl-5">
+            <div class="rellax d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5"
+              data-rellax-speed="-0.5" data-disable-parallax-down="lg">
+              <img src="https://apps.odoo.com/apps/icon_image?module_id=32964" class="d-dark-mode-none" width="306"
+                alt="Illustration">
+
+            </div>
+            <div class="rellax ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.5"
+              data-disable-parallax-down="lg">
+              <h3 class="h4">Schedule a Pickup</h3>
+              <p class="mb-0">Arrange a convenient time for us to pick up your clothes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="step pt-0 pt-md-4 pb-5">
+          <div class="step-number">
+            <div class="step-number-inner">3</div>
+          </div>
+          <div class="step-body d-flex align-items-center ps-xl-5">
+            <div class="rellax d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5"
+              data-rellax-speed="-0.3" data-disable-parallax-down="lg">
+              <img src="https://i.pinimg.com/236x/bc/6a/6b/bc6a6b80cb7a3177723d5fbaa2157638.jpg"
+                class="d-dark-mode-none" width="306" alt="Illustration">
+
+            </div>
+            <div class="rellax ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.4"
+              data-disable-parallax-down="lg">
+              <h3 class="h4">Expert Cleaning</h3>
+              <p class="mb-0">Our experts will clean and care for your clothes with the utmost attention to detail.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="step pt-0 pt-md-4 pb-5">
+          <div class="step-number">
+            <div class="step-number-inner">4</div>
+          </div>
+          <div class="step-body d-flex align-items-center ps-xl-5">
+            <div class="rellax d-none d-lg-block flex-shrink-0 mx-4 mx-xl-5" data-rellax-percentage="0.5"
+              data-rellax-speed="-0.5" data-disable-parallax-down="lg">
+              <img src="https://i.pinimg.com/236x/5c/82/f5/5c82f5eb25a95149d1fe588a7808ccb5.jpg"
+                class="d-dark-mode-none" width="306" alt="Illustration">
+
+            </div>
+            <div class="rellax ps-md-4 ps-xl-5" data-rellax-percentage="0.5" data-rellax-speed="0.6"
+              data-disable-parallax-down="lg">
+              <h3 class="h4">Guaranteed Satisfaction</h3>
+              <p class="mb-0">We guarantee your satisfaction with our service or your money back.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- last one sec end -->
   <!-- extra part -->
   <div class="faq-container">
-    <h2>Frequently Asked Questions</h2>
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
     <div class="faq">
       <button class="faq-question">What payment methods do you accept?</button>
       <div class="faq-answer">
@@ -361,7 +636,8 @@
     <div class="faq">
       <button class="faq-question">What our Satisfaction Guarantee</button>
       <div class="faq-answer">
-        <p>Ensuring that customers are happy with the service provided. If not, they might offer a re-service or refund.</p>
+        <p>Ensuring that customers are happy with the service provided. If not, they might offer a re-service or refund.
+        </p>
       </div>
     </div>
     <div class="faq">
@@ -374,19 +650,28 @@
 
 
   <!-- end ex -->
-
-
-
-  <!-- last one sec end -->
   <!-- footer -->
-  <footer style="text-align: center;"
-    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="">
-
-      <h5 style="text-align: center;">© 2024 Company,</h5>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
     </div>
 
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary" href="# "> <img class="footer-image" src="instagram.svg" width="34px"
+            height="34px" /></a>
+      </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://www.facebook.com/people/My-Cloth-Care/100057565744629/"> <img
+            class="footer-image" src="facebook.svg" width="34px" height="34px" /></a>
+      </li>
 
+    </ul>
   </footer>
   <!-- footer end -->
   <script>
