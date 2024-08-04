@@ -28,6 +28,7 @@
        background-size: cover;
        -webkit-background-clip: text;
        color: transparent;
+       text-decoration: underline;
    }
 
    /* buttton of social button */
