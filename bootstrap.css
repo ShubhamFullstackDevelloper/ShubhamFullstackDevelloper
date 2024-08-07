@@ -443,14 +443,8 @@ gap: 100px;
     font-weight: 32px;
   }
 }
-/* @media (min-width:800),(max-width) {
-  .container {
-    width: 100vw;
-  }
-  .collapse {
-    height: 5vh;
-    width: 300vw;
-  }
+ @media (min-width:800){
+  
   .price-box{
     display: flex;
     flex-direction:row;
@@ -459,16 +453,5 @@ gap: 100px;
     padding: 20px;
   
    }
-   .contact {
-gap: 100px;
-    display: flex;
-    flex-direction: column;
    
-    width: auto;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-weight: 32px;
-  }
-} */
+} 
