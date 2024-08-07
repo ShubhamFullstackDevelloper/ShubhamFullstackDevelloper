@@ -393,6 +393,26 @@ h1, h2, h3, h4, h5 {
     height: 5vh;
     width: 300vw;
   }
+  .price-box{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 97vw;
+    padding: 20px;
+  
+   }
+   .contact {
+gap: 100px;
+    display: flex;
+    flex-direction: column;
+   
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 32px;
+  }
 }
 
 @media (min-width:590px), (max-width: 768px) {
@@ -402,7 +422,7 @@ h1, h2, h3, h4, h5 {
   }
   .carousel-inner {
     width: 100vw;
-    margin-left: 10%;
+   
   }
   .about-image {
     margin-top: 25px;
@@ -441,4 +461,16 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
   
    }
+   .contact {
+gap: 100px;
+    display: flex;
+    flex-direction: column;
+   
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 32px;
+  }
 }
