@@ -433,4 +433,12 @@ h1, h2, h3, h4, h5 {
     width: 100vw;
     height: 300px;
   }
+  .price-box{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 97vw;
+    padding: 20px;
+  
+   }
 }
