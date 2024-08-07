@@ -7,6 +7,8 @@
     background-color: #46c2cb3f;
     width: 100vw;
   }
+  /* */
+
 
   .heading-color {
     color: #e97908;
@@ -76,7 +78,7 @@
 
   .opacity-75 {
     font-size: 32px;
-    color: black;
+    color:#4477CE;
   }
 
   .img-fluid {
@@ -301,43 +303,7 @@
     margin-right: 30px;
   }
 
-  /* Media Queries */
-  @media (max-width: 1200px) {
-    .container {
-      width: 100vw;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .carousel-inner {
-      width: 80vw;
-      margin-left: 10%;
-    }
-
-    .container {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .about-image {
-      height: 300px;
-      width: 300px;
-    }
-
-    .img-sec {
-      margin-right: 0;
-    }
-
-    .choose_1 {
-      width: 100vw;
-      height: auto;
-    }
-
-    iframe {
-      width: 100vw;
-      height: 300px;
-    }
-  }
+  
 
   /* why choose cloth care */
   .choose_1 {
@@ -353,3 +319,118 @@
   .p-4 {
     padding: 20px;
   }
+  /*  */
+  /* /////*/
+ .price-box{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 97vw;
+  padding: 20px;
+
+ }
+ a {
+  color: white;
+  text-decoration: underline;
+}
+.font_60 {
+  font-size: 60px !important;
+}
+.col_blue {
+  color: #790CB1 !important;
+}
+.col_yellow {
+  color: #44b10c!important
+}
+.text-center {
+  text-align: center !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+.col-one{
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.446);
+  border-radius: 10%;
+}
+/*  */
+.work_h1i2 {
+  border: 10px solid #44b10c;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 !important;
+  padding: 20px;
+}
+.work_h1i2 {
+  padding-top: 100px;
+}
+.work_h1i2 {
+  border: 10px solid #44b10c;
+  width: 350px;
+  height: 350px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+/* Media Queries */
+@media (min-width:1100) ,(max-width: 1200px) {
+  .container {
+    width: 100vw;
+  }
+  .collapse {
+    height: 5vh;
+    width: 300vw;
+  }
+}
+
+@media (min-width:590px), (max-width: 768px) {
+  body{
+    height: 100vh;
+    width:100vw;
+  }
+  .carousel-inner {
+    width: 100vw;
+    margin-left: 10%;
+  }
+  .about-image {
+    margin-top: 25px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+ 
+
+  .img-sec {
+    margin-right: 0;
+  }
+
+  .choose_1 {
+    width: 100vw;
+    height: auto;
+  }
+
+  iframe {
+    width: 100vw;
+    height: 300px;
+  }
+}
