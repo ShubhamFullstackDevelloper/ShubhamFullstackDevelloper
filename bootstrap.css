@@ -78,7 +78,8 @@
 
   .opacity-75 {
     font-size: 32px;
-    color:#4477CE;
+    color:#010814;
+    font-weight:9000px;
   }
 
   .img-fluid {
@@ -389,10 +390,7 @@ h1, h2, h3, h4, h5 {
 
 @media (min-width:590px), (max-width: 768px) {
  
-  .carousel-inner {
-    width: 100vw;
-   
-  }
+ 
   .about-image {
     margin-top: 25px;
     height: 200px;
@@ -443,15 +441,5 @@ gap: 100px;
     font-weight: 32px;
   }
 }
- @media (min-width:800){
-  
-  .price-box{
-    display: flex;
-    flex-direction:row;
-    gap: 20px;
-    width: 97vw;
-    padding: 20px;
-  
-   }
+
    
-} 
