@@ -388,9 +388,12 @@ h1, h2, h3, h4, h5 {
 /* Media Queries */
 
 
-@media (min-width:590px), (max-width: 768px) {
+@media (min-width:590px), (max-width: 78px) {
  
- 
+  .carousel-inner {
+    width: 100vw;
+   
+  }
   .about-image {
     margin-top: 25px;
     height: 200px;
@@ -403,6 +406,7 @@ h1, h2, h3, h4, h5 {
   .container {
     flex-direction: column;
     width: 100%;
+    margin: 0 !important;
   }
 
  
