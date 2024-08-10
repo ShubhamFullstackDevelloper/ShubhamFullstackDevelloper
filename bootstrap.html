@@ -37,15 +37,18 @@
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span style="color: #E9FF97;">MY CLOTH CARE</span></a>
+      <a class="navbar-brand" href="#"><span style="color: #e3fa93;">MY CLOTH CARE</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+       
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"><span >Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about"> About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#service">Services</a>
@@ -53,7 +56,24 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#contact"> Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#location"> Location</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+            aria-expanded="true" aria-controls="collapseWidthExample">
+            ORDER
+        </button>
+          </li>
+          
         </ul>
+        <div>
+          <div class="collapse-horizontal collapse " id="collapseWidthExample" style="">
+              <div class="card-body" style="width: 300px;">
+                  <a href="tel:9876543210"> <button class="btn btn-outline-primary">9876543210</button></a>
+              </div>
+          </div>
+      </div>
 
 
 
@@ -69,6 +89,7 @@
         aria-current="true"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
     </div>
+
     <!-- 1 -->
     <div class="carousel-inner">
       <div class="carousel-item" data-bs-interval="1500">
@@ -78,9 +99,8 @@
         <div class="container">
           <div class="carousel-caption ">
             <h1 class="heading-color">Quality Laundry Every Thread.</h1>
-            <p class="opacity-75 ">We use high-quality, eco-friendly detergents that are gentle on your clothes and the
-              environment. Each item is meticulously cleaned to preserve its fabric and color.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p class="opacity-75 ">"Experience the finest laundry care with attention to every thread."</p>
+
           </div>
         </div>
       </div>
@@ -92,9 +112,8 @@
         <div class="container">
           <div class="carousel-caption">
             <h1 class="font_80 heading-color mt-3 mb-3"> Specialized Care</h1>
-            <p class="opacity-75 ">From delicate fabrics to everyday wear, we offer specialized care tailored to the
-              needs of each garment. Your clothes are in safe hands with us.</p>
-            <p><a class="btn btn-lg btn-primary" href="bootstrap_pagetwo.html">Learn more</a></p>
+            <p class="opacity-75 ">"Expert care tailored to your needs."</p>
+
           </div>
         </div>
       </div>
@@ -106,9 +125,8 @@
         <div class="container">
           <div class="carousel-caption ">
             <h1 class="heading-color"> Stain Removal</h1>
-            <p class="opacity-75 ">Tough stains are no match for our advanced cleaning techniques. We carefully treat
-              each stain to restore your garments to their original condition.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p class="opacity-75 ">"Effective stain removal for spotless results."</p>
+
           </div>
         </div>
       </div>
@@ -145,9 +163,7 @@
         </div>
         <div class="col-md-6 about-sec">
           <div class="about_h1r">
-            <h3 class="col_green icon_line text-start">ABOUT US ___
-
-            </h3>
+            <h3 class="col_green icon_line text-start" id="about">ABOUT US ___ </h3>
             <h1 class="mt-3 mb-3">Experience OF My Cloth Care </h1>
             <p>Specify the range of services your laundry offers, including wash and fold, dry cleaning, ironing, stain
               removal, and any specialized treatments for delicate fabrics or special garments.</p>
@@ -198,7 +214,7 @@
   </section>
   <!-- about end -->
   <!-- card bootstrap -->
-  <div class="container">
+  <div class="container" id="service">
     <section id="serv_h" class="p_3 bg-light">
       <div class="container-xl">
         <div class="row serv_h1 text-center mb-4">
@@ -252,7 +268,7 @@
                 <p class="mt-3"> Dry cleaning is a specialized cleaning process that uses chemical solvents instead of
                   water to clean fabrics. This method is particularly effective for delicate fabrics that might be
                   damaged by water or traditional washing methods. </p>
-                <h6 class="mb-0 mt-4"><a class="button_1" href="#">Read More</a></h6>
+                <h6 class="mb-0 mt-4"><a class="button_1" href="bootstrap_pagetwo.html">Read More</a></h6>
               </div>
             </div>
           </div>
@@ -276,7 +292,7 @@
                 <p class="mt-3">Wash & Fold services offer a convenient solution for everyday laundry needs. This
                   service includes washing, drying, and neatly folding your clothes, saving you time and effort. Ideal
                   for busy individuals and families. </p>
-                <h6 class="mb-0 mt-4"><a class="button_1" href="#">Read More</a></h6>
+                <h6 class="mb-0 mt-4"><a class="button_1" href="bootstrap_wash_pagethree.html">Read More</a></h6>
               </div>
             </div>
           </div>
@@ -357,8 +373,17 @@
           <div class="work_h1r mt-5 text-end">
             <ul class="mb-0">
 
-              <li class="d-inline-block ms-2 button_1"><a href="9766130791"> Contact Us Now</a></li>
+              <li class="d-inline-block ms-2 button_1"> <button type="button"  data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                aria-expanded="true" aria-controls="collapseWidthExample">Contact Us Now</button> </li>
+         
             </ul>
+            <div>
+              <div class="collapse-horizontal collapse " id="collapseWidthExample" style="">
+                  <div class="card-body" style="width: 300px;">
+                      <a href="tel:9876543210"> <button class="btn btn-outline-primary">9876543210</button></a>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>
@@ -390,7 +415,8 @@
           <li class="mt-2"><i class="fa fa-check-circle  me-1 align-middle"></i> 9 Towel</li>
           <li class="mt-2"><i class="fa fa-check-circle  me-1 align-middle"></i> 2 Set Of Bed Sheets</li>
         </ul>
-        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="./bootstrapchat.html">CHOOSE PACKAGES</a></h6>
+        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="./bootstrapchat.html">CHOOSE PACKAGES</a>
+        </h6>
       </div>
     </div>
     <!-- 2 -->
@@ -408,7 +434,8 @@
           <li class="mt-2"><i class="fa fa-check-circle  me-1 align-middle"></i> 9 Towel</li>
           <li class="mt-2"><i class="fa fa-check-circle  me-1 align-middle"></i> 2 Set Of Bed Sheets</li>
         </ul>
-        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="bootstrap_pagetwo.html">CHOOSE PACKAGES</a></h6>
+        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="bootstrap_pagetwo.html">CHOOSE PACKAGES</a>
+        </h6>
       </div>
     </div>
     <!-- 3 -->
@@ -426,7 +453,7 @@
           <li class="mt-2"> 9 Towel</li>
           <li class="mt-2"> 2 Set Of Bed Sheets</li>
         </ul>
-        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="#">CHOOSE PACKAGES</a></h6>
+        <h6 class="mt-4 mb-0 text-center button_1"><a class="button_2" href="bootstrap_wash_pagethree.html">CHOOSE PACKAGES</a></h6>
       </div>
     </div>
   </div>
@@ -459,7 +486,7 @@
           <div
             class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
             Mobile phone</div>
-            <br>
+          <br>
           <p class="mb-0 text-body">+91 8698521857</p>
         </div>
       </div>
@@ -490,15 +517,16 @@
         </div>
       </div>
     </div>
-    <iframe
+  </div>
+  <div id="location">
+    <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d929.4404048715652!2d78.58898526959773!3d21.28090159877704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4578a6cb7fd6f%3A0x6e722e8a72461fb!2sMy%20cloth%20care!5e0!3m2!1sen!2sin!4v1722775129242!5m2!1sen!2sin"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  </div>
-  </div>
-  </div>
+
+
   <!-- exmple end -->
   <!-- contact sec  -->
   <div class="contact" id="contact">
@@ -517,49 +545,50 @@
       </div>
     </div>
     <div>
-
     </div>
 
-    <!-- end con sec  -->
-    <!-- footer -->
-    <footer class="d-flex flex-wrap justify-content-start py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <h2 class="mb-3"><a class="text-black text-white  me-4" href="index.html"><img height="100px "
-              style="border-radius: 50%;" width="100px"
-              src="https://scontent.fnag12-1.fna.fbcdn.net/v/t39.30808-1/310638537_551209230141264_4351096908625623220_n.jpg?stp=dst-jpg_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=sm6SMmQDW1UQ7kNvgHCC8zV&_nc_ht=scontent.fnag12-1.fna&oh=00_AYBwqT7wstmHVL5ZzNQ1gqtPZxUHtMOGCgIB15c45-YeeA&oe=66B5124E"></a>
-        </h2>
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© my Cloth Care Company, Inc</span>
-      </div>
-      <div class="d-flex justify-content-end  " style="margin-left:35vw;">
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+  </div>
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="https://www.facebook.com/people/My-Cloth-Care/100057565744629/"> <img
-                class="footer-image" src="facebook.svg" width="34px" height="34px" /></a>
-          </li>
+  <!-- end con sec  -->
+  <!-- footer -->
+  <footer class="d-flex flex-wrap justify-content-start py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <h2 class="mb-3"><a class="text-black text-white  me-4" href="index.html"><img height="100px "
+            style="border-radius: 50%;" width="100px"
+            src="https://scontent.fnag12-1.fna.fbcdn.net/v/t39.30808-1/310638537_551209230141264_4351096908625623220_n.jpg?stp=dst-jpg_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=sm6SMmQDW1UQ7kNvgHCC8zV&_nc_ht=scontent.fnag12-1.fna&oh=00_AYBwqT7wstmHVL5ZzNQ1gqtPZxUHtMOGCgIB15c45-YeeA&oe=66B5124E"></a>
+      </h2>
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© my Cloth Care Company, Inc</span>
+    </div>
+    <div class="d-flex justify-content-end  " style="margin-left:35vw;">
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 
-        </ul>
-      </div>
-    </footer>
-    <!-- footer end -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const faqQuestions = document.querySelectorAll('.faq-question');
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/people/My-Cloth-Care/100057565744629/"> <img
+              class="footer-image" src="facebook.svg" width="34px" height="34px" /></a>
+        </li>
 
-        faqQuestions.forEach(function (question) {
-          question.addEventListener('click', function () {
-            // Toggle the active class to expand/collapse the answer
-            question.parentNode.classList.toggle('open');
-          });
+      </ul>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(function (question) {
+        question.addEventListener('click', function () {
+          // Toggle the active class to expand/collapse the answer
+          question.parentNode.classList.toggle('open');
         });
       });
+    });
 
-    </script>
+  </script>
 
 </body>
 
