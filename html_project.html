@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for icon -->
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ARH4OmzlSjV5xhf4hem_7L7uAbZgjCMkoQ&s">
+    <title>Home Page</title>
+    <!-- LINK OF FONT AND BUTTON CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINK OF STYLESHEET -->
+    <link rel="stylesheet" href="html-project.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- body -->
+    <header>
+
+        <h1>Welcome To My HTML Projects</h1>
+
+        <body>
+            <!-- con button -->
+            <div class="social-buttons">
+
+                <a href="https://www.linkedin.com/in/shubham-kakde-a291892a9/"
+                    class="social-button social-button--linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/ShubhamFullstackDevelloper/ShubhamFullstackDevelloper"
+                    class="social-button social-button--github" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://web.skype.com/" class="social-button social-button--skype" aria-label="skype">
+                    <i class="fab fa-skype"></i>
+                </a>
+            </div>
+
+    </header>
+
+    <!-- project start form here -->
+    <section class="projects">
+        <!-- cal -->
+        <div class="project">
+            <h2>Flex Layout (1)</h2>
+            <p>a layout model that allows items in a container to be arranged in any direction and to adjust their size
+                to fit the available space..</p>
+            <a href="./flex_layout.html">
+                <button>Flex Layout</button>
+
+                <img src="data:image/png;base64,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"
+                    alt="calculator">
+            </a>
+        </div>
+
+
+        <!-- resume -->
+        <div class="project">
+            <h2>Resume Project (4)</h2>
+            <p>A resume, often referred to as a CV (Curriculum Vitae) outside of the US, is a formal document that
+                summarizes your professional qualifications.
+            </p>
+            <a href="./resume.html">
+                <button>Resume</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwbuT7zV_yXeqtZfrJYUT65XU6cF-MlGx8g&s"
+                    alt="resume">
+            </a>
+
+        </div>
+
+
+        <!--chess box  -->
+        <div class="project">
+            <h2>Chess Box Project </h2>
+            <p> Chess is one of the oldest and most popular board games. It is played by two opponents on a checkered
+                board with specially designed pieces of contrasting colours
+            </p>
+            <a href="./chessbord.html"><button>Chess Box </button>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA2AMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAQMEBQYAB//EAD4QAAIBAwMBBQUGBQIFBQAAAAECAwAEEQUSITEGE0FRYRQicYGhFTJCkbHBByNSYtFy4SVDU4LwFiQzNMP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDxLFLiixS4oEApcUQFFigDFKBRgUQWgACiC0QWlxQDtrttOYrsUAAUuKPFLigbOACScAdSaRSrfdIPwNPpcizPeK0qSgHY0Zxg486RL6e8RY7ueWZkyVaRyxAOPP4UDWK7bTuM0m2gaxSFadxSEUDRWkK06RSEUDBFIRTpWhIoGyKHFOEUNA2RSEU7igIoANdSmuoHgKXFKBRYoOApQKUCiHWgQCixXYpQKDsUoFKBRAUCYpcUQFcBQDinYoGlDlMAIu5ixwAKGnbZxHMM8o3uuPQ9aC1tuzRudMuLk69o0PdoD3JvMscnABxwPmflUSx0J/Z5lTU9MLqwO32oEEYI6+fxqouUa3mljBwAdpFHpyl50XnlhQT5dKvYbd7hrVu4jOHkUgqD4c5qHir/ALQ3bxRrpMRKwRlWlA/E9UXNAGKQijpG4UnBOB0FABFCam3NmYGlAmjkEbEMVDcYz6en6etN3dq9vt3bSr5Ksp6gEg/UH9aCJQkU4RSUDRFARTpFCaBsihxThFCRQNkV1Ea6geAosUoFFig4UoFKBRAUAgUQFLilAoExRCnYbeSZJXjXKwoZJDkDCjxoxay7bZtoIuWKwkEe+QQOPmRQMVwp2WF4ZXikG10Yqw9RQAUCYFdjiixXHhcnpQNax/8AY3n8ahvpUzshCLjWbVD03g/lzT+vaFfRRwHAJEQDjPIPl9aa7GFrfW0WUYYI+3kfe2nFA3fTm6vZ7gnPeSMw+GeKYxR92ye44IZfdIPgRSUA46etHCu6eJACdzqMDxya0PZrslca4puLi6isbEcd9KpZpP8AQo6/E4Hxq8l0LsXo+vadYz63qctxK0cqu0KCJG3ZUOeuGI8AaDM28ot7y+0iS3RjIYYy3B2smdxz67jTHakINYmgi4WEBDz443H9a0cnZPWNM7YtealDbiyluGYzRy71HlnHP0rJ6r3jalePLnc8zHkdQTx9MUEBhQYp4igIoG6AinSKEigaIoSKdIoCKBs11KRS0EgCiApFFGBQcBRYpcUuKBMUuKUUQoNh2IubLT7aKedrcyy3bBo3QMz7FBReei5JJPHh6VoZe2lnqmr21zarbLDZMwlSaJQsq7eJIzjJYHIx1IORXnVnC89ndqsTSIgViAucHkfX9qc0zIuArxvGOh3LiguP4hxWg1xLmzVFF1CHdFGMMCRnHwArMVc9q+damA+4FAUelVGKAcU/ZXD2V3Dcw8SROGU+tNtG6hSyOu7lSVIDD086s+z2kDV7qRZZ0t7aFQ0sjOqnnoBuIGTg/DFAur69JJHHLJdXwMgJIa6LftUTSZoLmaS5neWXuEMmC/JxWi7V6boeoQRpYahawSRAKim8gKqPLC4rMWVlLpc/eQ6jZMMFW2yKwYHw60DmpXMd5dNNFbLbhhyqsTk+J5otH05tV1OGyV2RXP8AMYfhUDJP5U7qOmNawR3EZzC/hsI2+XoR8KtOzkS2elXmoybGeX+QgJ5VfxH5nAx1904zngHu0uu93EttYFIYzIIITxhAPvH4AYHzrOHtJbLPdCTT4rnv12m4mUSSqv8Abu4UnxPWoXaS4ZrmKFjnuk95em3POPyxUH2ZJlBtpAT4oeuatFpb6m9uDLFf3kku7+XA53Lt/uOcZ+HlV12gWKextr3GGlx3ZA++vO4H4cfn6iskbSWNd3II8ccVLsLwtALK5Y4QkwuT9zjkfA4+lQLikxTrKVJVhg5II8qAjFA2RQGnSKEigaIoWFOYoTQNEV1ERXUD4oxSCrTQ9MGozv3jskMY95kGSx8hQVwFFVlrWmfZ0qGNnaF/ul1wQfI1XgUCUQFcBzS44NBM06OSSK6aF9u2ME+9jPPHp59absZZBOO8dW56d8h/etXomuaVbaYLOLTYxKVDzyHeWdh1JPIHpxxTQ7RaW8/FjFnP9YH/AOdFU/aZT9ruSCAyLszzgVM7MaXo1wj3naa9kt7L7qRQ/fmPjz4AfnU7tVqWj31iiJZsmoxkBJEyFVeMg44YceXFYnWIrqW3t3VXNuilVx0Bzz86I10V9od1rF/FrOpz3Wllh9ngXPvwDoOMY4Bx8qrNVs20i6jawu3ktp1JimX3WIHUEDxGRWPjt5ZGCohLHpit1qzKvZzRrd023MfeNJ6jPH60FTqGqXS2CNI4c7yAWUEkYU/vS6Ncm5tbuQqheKLcPcHByB+9QdYG3TYPMyOf0H7U/wBkxvg1JPE2xP5EGgcuLu4njXv55JEXoHbgfLwrT3UE1rZaXa2lpNNOYjIsUa7mZ2H6kk9PBfAdc/pNnFeX8MNy222JzMf7Byw+JAwPjVtddtdRtJbjVLY91NcSFLfaFzDEB6dMnx8dtVVPffw97Ywo1zeaPKN/vHMsZY/9u7P0rNrFJbyusqukkZwyEYIqbcdpNZurgzT6jcPIepL1c9obczafo2rd7FJcXELCdWcKzYbaBz148fDioimsbxpj3cmO88D504LSAyhpNxy3K+njVdLE1rP1IIwyEjrV4wPcQNIw9oZSZVUYCnPH0xQBcSNPcSzyfekYsceZOaaxR4NJ8+POgbNCRT0cUkwzDG8gAySilsD5U3wc4I4OKBsigIq3i0eR7VJ3ureEuuUikJ3MPPgcVWyRSKwUqckZGOcj086Bg11EykHBBB8iMGuoHUxuGTgZ5Ir0HRYLeytUVECGTnBPJNYG0Qy3EaDnLDwzWvhsp5JXa4uiSuRFGF4UeZx1/agtNQFrqMb2cgG/qOOVPgawksEtvIYriNo5F6hhitNcXktpqqMkvtOc/wAh8IxB/pboT6Z8a0kU+jdpLSSyuZFScqGKznu5Y/Lr5Gg86sLK51G6S1soHmnc8Io8PMnoB616loP8MNJ7lDrF7LcXLAkpbNsjXHrgk/HirLStP0nQrRPYdQWVLZC06xyRr3x/qkOCflkAU4l8k0kb3dsLcScwy28pZHHlkjKt8MdPHpQZjtL2D+xCuoaDdTSRIwMsUhG9VyM4I6jHhWK7OXL3WtpBM+5S2BzXqmpahMLO4jkkLyKjLuAxuGODgV4zoNx7L2gR24EcoJGPI0Ei6keWeR5mLNuOSfDk1po9A1nSuzd3qO7YZ4h3VvEyyEnzcchTj5+eKpNWthb6ndRLygkbYfNc9aZ9xophNGCTGcMgCtkDjJHJ6edBU2l9PFqUMmqRyGASAyrs2ZGeRkDP5VfX9sbmFtTs/wCbYMxVecNGAcAFTyB61SaJbfauoLAzbwQWKF25AGT41qez+mQXdnexteNZWEa722gHn8O4n5cc558jQZjtEpW0s0/sLn5mpPYMd5qFzB/1bWVR8cf7Vq+0HZqZrYX0OjyX1u8SiBS7LsBxhvdIJOKynZ5JNJ15ZJI5FhWQjMgwSpyP0oLHs9a+06pErBsKCxVRktx0q5j7IXEGn3F9NZ7dPETNunyBIwA2BTx5E7vXjNVXeS2N/ObHa0kp2xPycbj4ep6fpUq9u9U0rU7qwi1K5bEu0BJWVUTPXAOOnPP+aKxCXEXtC77YRoSN2ecCrjtLHdG7SaNTJpUI7uKZEBXb47scAmolgX1HVEgmuHbcSSc84AJP0FENWvHsruyt3EdrJGXZNu4kD1OT+VET3sZDpsbzW4xFIWhLHJ2EDGfMZGaisOTyevjUzsxqS3Nt7BdPhouIs/iU+HypdQsXsrgxsCARlM+VBAOByeg5r1XsL2Es4rWLUdbg9puZFDR2zjKRA9Mj8TfHpXnmiWiXmsWcEuDE0gMgPTaOSD+Vev6hBe6uvsdlfmwWMLJLc95gnOcJtH5nOPDzoLK7NrBE57uOCJV5GNgAHX5VhZZINZ1C8hFvHHYwgIEeIAyuw3E9M8Aj8zVpPaK8kcUd4b8Rr3cu+3aVHP8AcRwpHh0I5zms5rF09hfK6Iyd6D7rjxHGQT8uvlQTpXsLG2MZW1iSLKIM46cgZP1rIvqFzOxe1sou6z7o77uwR54AzznxNVna+9t9SntzZd6Y4IzGwkHjnr8/Gq+x1KWLcrMQW8TQSNTe7efddxIu4kRiI52fPqRXUN3fujmKQYJ5+VJQOJJJp3dvDGJbuUZUHkRjxJ9a7Vb/AFCO1gk70IbgHf3Z8fQ/4qssihikV8M/UIereg+tWghn1aOKA2vs7R8qgBUbfHr08KAOzcN/qFw4W/kt4FOXkYk8+Q9a095d2mkFWjnt9SyQCZyJAjY/Xpx40wLWWx08R3dsrW4GN1oSCg88dT8c5rNa7BDA8S2YHs8v8xcHO7AwD9TQbTs1PaXoGpNbWtrexSsF9mAQMnHDgcN+XwxV19rSiaewLRmDuBLCVXaIiDjHr4flXmPZqeWK/WJHISX3Wz0z/wCZrV3mpWcF4UnmkT+UEDRpu6npzgDqPGg22lpdTWYuoLjT++f/AJVzMB7vh1B/SqC+0fvNRE2qwWEEWcu9pOpY+W3C9TVNbXHZg2sMWoyyXF0GLTzQzbRIT+EcHCj05NR+0Gs2NxqFhaaLaxWljaq0riP7znjkseTwPHzNBoNdskvIHuILYR9yuVMY/D6+fFZqaOY6fNJFFH3KRtuk2+8HP3RnwGM8ehrR6N23tJ7NbF0jWMjDhh97Pn8uKm6i7Q6MIdOhtZbAg94rWUsrofNmjbp6kfOg817E3K2vafT5ZP8A4+9Cv/pPB+hNbvS+yV/fT3luiqIYiVV5QCruD7uAeuPP/NYe3003OpJHpfdSSFuFhZzt59RwPjW9vNXh0SGXT9M1SW9vrYbppHIEZbjKrx4cc0E3UbP+LNhEf/ezXEAH/Lkj6fAisbcN2hnn/wCMW1wyg8khP2rU6dd6/qmkT319qtvYoE3QQOSzzeRwDwPXx8qwb9p9SuBmRc59DQbixhtbZ/tG3h2wWqqbeOZl4kOcs2PLGfyrMdpLjfqs8VvljIELttOemSD8ifrU/sne2j3LPqBkXau5Iyu5Wf19P9qbm+0dStdTnhtZXid3LzsmS7E52qfLp8MDzorK9k3X/wBT6eJDhZZxGT/r9396ih5LcyQvHtcAxuCwyPAio699azq2GjljYMMjBUitf2l+xBfy3YsjJHdN3veJIwXc3vEdeCCTxRFBp8sS3UffRnbkZIUNgV6NfwWc1rP38Cle5BgupF7uUHHAxnBHTj1rzr2nTlkDQW7KR0O8/wCa13Z1rvtDIYI2M7Bee9kyQvzoI+iSC01FZ2GcKwA8+K0UXaKJYhbyzFLdE9ouijYMrvk7R88/AD1rOXMRt7h08UOODmqq/ljBdWcgOB0/eg9B0vtBPqncPev3VvIdtnYwe4oX+psHkdP988H2p063l2QNewRXLDdEGlAPzXPQ+dYSy1l7Mq6EOBHhcYxwOP1arjTWg9heaa5khaT+ddXAI7yTzyxyQo6ADrnrRVDc20BnaO+MtjcoW3e5vDk+OPL1FQ/Z7OAbpryK4dRlI4QSreWW8PUVpdYtBqStDALgzooYoV7xoRxjeR9zP9JY/nWaS3uLQST3lt7sL7UDKdrv4fEeP5edEMjdLfQtqe5hkFt4xkf4rqtXvbbW7Lu70iC7iGVlYYX8/wBq6goXvYjE8cVpFEXxlwSSPhTml3MFnmS5jaRT92NWxuPmajLaEozbwMeBoHiYeI+QoLaXW5S2bBpbXOd0Zk3qR6Z6U2L+Q2Ko8UUxDsMtHuIUgHjy+VVS8cMrH0qdZW5k94RlEB5J8aBzTQwlDIZFK/dO08fStPo+ipKxkaWVt3JLDjPr6VC06JO8VQMAmtnD3cMSKxC8+8fIdaDBdrdF+zr7cY44e9O4KjZCnHl4c1T28ndLcE/e7naPnitp2l0uXUG9qubiYCViyxkcRHp8+AKw17C1vdSwM2dp5bzoGUkZCCjEGrjS+1Or6Y4e1uSCvTPOKpgM8AZJ6AVbQdn9RliWUwmKNvus5+9QaW5/ijrVxZSW3d2yd4u13jhVWYepFVujdqRaWwtLm2inicnvBImd24kkn6D4VU3ujXNrAZnClVOGwemaPTtAvr6zN3bxBotxQE8ZPpQWA1661nXo3uptkDy7nAOAEB4HyAApy40t7Wya4F7DKBJsVIyC23+pv6fQVS6Tp73153C5BKEnHpV9B2amjJaF495GDvycUB6C9mJv+I3Hdx+LmTlR44AH61vobL+Hp01kt9bu7GT3jvhnYMxPi3OGrGWGkDT39o1OQtbxjOyOMAFvM7uDjyrO6jaW6OzW9zBMoP44GjNBaavpmk9823tGbhM8F8ZNSLOxg1+KLToZ0ZbcFldcRhc9WYk4rHZX/oD61caHJCJXWVIod64EzZHd+vqaCtkWGGZo3TLIxUkHrg4rSdlYjJJI8EwhKLwO8ALegGcn5VTDTHlkJhnhdSfdJk5I86udK0/U7Zi1s8e7GGwC3WgsHt5Lm7WJM95IQoGeKY17RrRXMa5cgYLg8k1O0hJhqaJKwZ0J94fA1Kn3RPI7EFRkbQOM0GCntZrUERkyxf0mjttTlQbcjcuGCkdSuSPqc/KtJKiSvlj18Bx8/wDz0quvdOieLvQuG8DnrQRhq220jsZGdrQL31xGrkG6lP8AU3XH+9R/bZby2lwIokVgxjjUJGB8PnUO4glHPd7uMZB5qx0qS1MTRzWJYoCdwGSR65/agca9stNsFiijhvJ5vemJbKr5Cuqqv1tzJm0imUdSHx9K6gmRbFX8WGTJA5FIIGZSRhvHaOuK60ZWQoW2nPBPhVklg3s5dsHHUoPCghQWssjALER488GrCeEQW6qG3EMS2B4+H6Gm7aNXiM0sjRwryVHGfhR296sgdLrAUj3eOF9KCboMImvFLn+WnvN+1bG0v9FG6S6uV7yHO5duM+i/1YrFtqMNvbvb2AYbz78zdf8At8qgq/QDjH5UGtudTkvYLifZsjWQCIAYATnAz8qxPamOISQz4KyyAhvI4rT6ZcK+kTxybVEUgwx5ODnw/P8AOoV/NFJIEEfuKgA3DmgymnX7WRJSJG/vx7w+BrYaZfWl1ZCLT3MUkYLNHuw758fU9ar/AHByAo+VGNucY+lA7qvtVxYSwxStl8DDN1FX1nPbrYJHA9vDND+EABWHpWeZhjB6+Wa6IqhyMEdceB+NFJCY4tbku9qxM4YHbgKfX51b+2Pg7XOBVdaW8U8/8yUxjaWMh8MU4hZti7sqx933cCiL3TIJbkMzA9ztO85wM+H1qkvrOwZ2YwQtz4gf4/etAt4gul04BgFULwfdZup4+lR9Rit2lm7y2DMqlg6PsY/HjHl4UVmTYWB49mj9cVM0vTtPFwGa2iI/uFNFoC/uGUDyODU5jHYFokR++Zfecn7noAPGgjOsYc4RAc+Qq00Zo3d0cTY2/wDK8fT0qoUp4lseOBVncTLFppS2kZYzjfhhz8f8UERrr2e+WeH8DZA6g48PnWsktbTULcXdu5aJ0wQBnn19RWAkl9aO01K6snL207xE9dp4PxHjRF3cWITMaHJTI34xjOMfpUC/jJty8W0qOpHJHI8KOPtPcE7LyGGaJuHATaSKblubWScLHOMP904+7/a2RQZ9zk8Vyy7QVIwPQ4Ip/UbdrW5ZeV5yBjpUWcOMFxgEeVAE49/3z1PXzrqESlRgnI9a6gYHI5q00S7mW4ii3ZjOfdPh8K6uoB1S8kmncMFCxnACj9ajgkHArq6gNWNOBjSV1QXmmKgs5pmQOUx7rZwfjipV7BF9vmEIBGUB2j/TXV1UQLOFJdRjifO15lU4PgTUvU9SuY7mSO3ZYI04VIVC45I6jnwrq6gCyv55LiNbgrOrHGJV3fXrT8dvFBdMAu8B9oD88YY11dRXXFlDCkM8YIMiM20nIHHhnmmNOkM1/DvAxvPAFLXUQdvI/wBsxsTybtV+RatHqsKK7sMgmE5/Jv8AFdXUVibQk3cQPQuAfzqRqNxI97O7H3nlcn866uohlHbbnPJIHwo45Gafu25QjBU/H/eurqKr3Y00WPnXV1EAzHPWgYklfXiurqAZLqdwd8rtjpuYnFNuxO0nrjrXV1A0xNLXV1B//9k="
+                    alt="Vowels">
+            </a>
+        </div>
+        <!-- kbc -->
+        <div class="project">
+            <h2>KBC Project </h2>
+            <p> Kaun Banega Crorepati is an Indian Hindi-language television game show. It is the official Hindi
+                adaptation of the Who Wants to Be a Millionaire? franchise.
+
+            </p>
+            <a href="./millionaire.html"><button>KBC</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGAjXK-NNse2HY_86OulAUdcHOz5g-LFZtw&s"
+                    alt="Vowels">
+            </a>
+        </div>
+        <!-- FORM  -->
+        <div class="project">
+            <h2>Form Project </h2>
+            <p> Forms are documents that collect information from one's clients, customers, and respondents.
+            </p>
+            <a href="./formstart.html"><button>Form</button>
+                <img src="https://i.ytimg.com/vi/HN4rmD-9aYY/sddefault.jpg" alt="form">
+            </a>
+        </div>
+
+
+       
+    </section>
+    <!-- footer -->
+
+    <footer>
+        <p>&copy; <a class="foooter-bar" href="https://faculty.washington.edu/xpchen/me.html">About</a>
+            <a class="foooter-bar" href="https://www.w3schools.com/html/default.asp">Home</a>
+            <a class="foooter-bar"
+                href="https://secure.skype.com/portal/overview?intsrc=client-_-osx-_-8.112.0.206-_-.userInfo.myaccount&tcg=4049f272-1748-4cb6-9973-1d391f1c3499">
+                Contact</a>
+        </p>
+    </footer>
+</body>
+
+</html>
