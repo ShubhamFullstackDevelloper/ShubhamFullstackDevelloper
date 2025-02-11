@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Billing System</title>
+    <link rel="stylesheet" href="../css/electricalbill.css">
+</head>
+
+<body>
+    <!-- Main container for electrical bill -->
+    <div class="billing-form">
+        <h2 class="header">Check Your Electrical Bill 🧾</h2>
+        <div id="result"></div>
+
+        <div class="display">
+            <input type="number" id="units" placeholder="Enter units">
+            <!-- Function call -->
+            <button onclick="calculateBill()">Calculate Bill</button>
+        </div>
+        <table>
+            <legend>Charge Instruction</legend>
+            <tr>
+                <th>Range in Units</th>
+                <th>Rate per Unit</th>
+                <th>Surplus Usage Charge (Percentage)</th>
+                <th>Late Fees</th>
+            </tr>
+            <tr>
+                <td>0 - 50</td>
+                <td>₹ 0.5</td>
+                <td>5%</td>
+                <td>After 10 days = ₹ 30</td>
+            </tr>
+            <tr>
+                <td>51 - 150</td>
+                <td>₹ 0.75</td>
+                <td>10%</td>
+                <td>After 20 days = ₹ 60</td>
+            </tr>
+            <tr>
+                <td>151 - 250</td>
+                <td>₹ 1.25</td>
+                <td>15%</td>
+                <td>After 25 days = ₹ 100</td>
+            </tr>
+            <tr>
+                <td>251+</td>
+                <td>₹ 2.0</td>
+                <td>20%</td>
+                <td>After 60 days = ₹ 1000</td>
+            </tr>
+        </table>
+    </div>
+    <script src="../javascript/electricalbill.js"></script>
+</body>
+
+</html>

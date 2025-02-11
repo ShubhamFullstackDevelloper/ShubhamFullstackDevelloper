@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #c9ffbf, #ffafbd);
+    height: 100vh;
+}
+
+.container {
+    color: #47cf73;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#digital-clock {
+    color: black;
+    font-size: 64px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px black;
+    background-color: white;
+    padding: 24px;
+}

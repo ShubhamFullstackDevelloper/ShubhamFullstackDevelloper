@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #967E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+    background-color: rgb(31, 148, 198);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Display Area */
+.display {
+    background-color: whitesmoke;
+    width: 90%;
+    min-height: 80px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    overflow-y: auto;
+}
+
+/* Input Field */
+.input-box {
+    height: 44px;
+    width: 80%;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons */
+.button {
+    width: 85%;
+    height: 44px;
+    margin: 10px auto;
+    background-color: navy;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px black;
+}
+
+.button:hover {
+    background-color: darkblue;
+}
+
+.clear-btn {
+    background-color: red;
+}
+
+.clear-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%;
+    }
+}

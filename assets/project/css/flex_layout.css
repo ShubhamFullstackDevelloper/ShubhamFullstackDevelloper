@@ -1,0 +1,96 @@
+/* Reset margin & padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main {
+    background-color: #dcdcdc;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* First Section */
+.first {
+    background-color: #1e3a8a;
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.row-left {
+    background-color: #f78da7;
+    width: 40%;
+    height: 100%;
+}
+
+.row-right {
+    background-color: #ff6347;
+    width: 60%;
+    height: 100%;
+}
+
+/* Second Section */
+.second {
+    background-color: #ffa500;
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.top, .middle, .bottom {
+    height: 100%;
+    width: 33.33%;
+}
+
+.top {
+    background-color: #ffb703;
+}
+
+.middle {
+    background-color: #008080;
+}
+
+.bottom {
+    background-color: #2f3e46;
+}
+
+/* Third Section */
+.third {
+    background-color: #a8dadc;
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.left-one {
+    background-color: #34d399;
+    width: 50%;
+    height: 100%;
+}
+
+.right-one {
+    background-color: #6d28d9;
+    width: 50%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .first, .second, .third {
+        flex-wrap: wrap;
+    }
+    
+    .row-left, .row-right, .left-one, .right-one {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .top, .middle, .bottom {
+        width: 100%;
+        height: 33%;
+    }
+}
