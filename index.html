@@ -14,9 +14,10 @@
 <body>
   <header class="header">
     <div class="header__socials">
-      <a href="#"><i class="ri-mail-fill"></i></a>
-      <a href="#"><i class="ri-github-fill"></i></a>
-      <a href="#"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      <a href="https://github.com/ShubhamFullstackDevelloper/ShubhamFullstackDevelloper" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/shubham-kakde-a291892a9/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+
       <a href="#"><i class="ri-skype-fill"></i></a>
     </div>
     <nav>
@@ -39,7 +40,7 @@
     </nav>
     <div class="section__container header__container" id="home">
       <div class="header__image">
-        <!-- <img src="assets/header.png" alt="header" /> -->
+        <img src="./assets/image/my_image.png" alt="Profile_Image" />
       </div>
       <div class="header__content">
 
@@ -50,7 +51,7 @@
           journey in the digital realm began years ago, and I've since honed
           my skills in front-end and back-end development.
         </p>
-       <a href="assets/project/html/resume.html"> <button class="btn">Resume</button></a>
+        <a href="assets/project/html/resume.html"> <button class="btn">Resume</button></a>
       </div>
     </div>
   </header>
@@ -59,55 +60,67 @@
 
   <section class="section__container banner__container">
     <div class="banner__card">
-      <span><i class="ri-pen-nib-line"></i></span>
-      <div>
-        <h4>Design</h4>
-        <p>
-          Our designers and content creators are committed to delivering
-          engaging digital content.
-        </p>
-      </div>
-    </div>
-    <div class="banner__card">
-      <span><i class="ri-layout-masonry-line"></i></span>
-      <div>
-        <h4>Development</h4>
-        <p>
-          hiii
+      <span><i class="fas fa-code"></i></span>
 
-          We stay at forefront of technological advancements, ensuring your
-          digital presence performant.
+      <div>
+        <h4>Web Development</h4>
+        <p>
+          I am a passionate web developer dedicated to building dynamic, responsive, and user-friendly websites that
+          deliver exceptional digital experiences.
         </p>
       </div>
+
     </div>
     <div class="banner__card">
-      <span><i class="ri-checkbox-line"></i></span>
+      <span><i class="ri-database-2-line"></i></span>
       <div>
-        <h4>Testing & QA</h4>
+        <h4>SQL Database Management</h4>
         <p>
-          We understand that your digital presence should not just look good,
-          it should deliver traffic & engagement.
+          I specialize in designing, optimizing, and managing databases to ensure efficient, secure, and reliable data handling.
         </p>
       </div>
     </div>
+
+    <div class="banner__card">
+      <span><i class="ri-bug-line"></i></span>
+      <div>
+        <h4>Manual Testing</h4>
+        <p>
+          I ensure software reliability through thorough manual testing, identifying bugs, and enhancing the user experience.
+        </p>
+      </div>
+    </div>
+
+
   </section>
 
   <section class="section__container project__container" id="project">
     <div class="project__header">
-        <h2 class="section__header">My Projects</h2>
-        <div class="project__nav">
-            <button class="btn project__btn mixitup-control-active" data-filter="all">All</button>
-            <button class="btn project__btn" data-filter=".web">HTML</button>
-            <button class="btn project__btn" data-filter=".html">JavaScript</button>
-            <button class="btn project__btn" data-filter=".design">Designs</button>
+      <h2 class="section__header">MY Projects</h2>
      
-        </div>
     </div>
-    
-    <!-- Dynamic Project Grid -->
-    <div class="project__grid" id="projectGrid"></div>
-</section>
-<!-- project -->
+    <div class="project__grid">
+      <div class="project__card ">
+       <a href="./assets/project/html/html_project.html"> <img src="./assets/image/html_5 Background Removed.png" alt="project" /></a>
+      </div>
+      <div class="project__card">
+       <a href="./assets/project/html/css_project.html"> <img src="./assets/image/css-3.svg" alt="project" /></a>
+      </div>
+      <div class="project__card ">
+        <a href="./assets/project/html/js_project.html"><img src="./assets/image/JavaScript-logo.png" alt="project" /></a>
+      </div>
+      <div class="project__card ">
+       <a href="https://resplendent-praline-d72851.netlify.app/"> <img src="./assets/image/reactpng.png" alt="project" /></a>
+      </div>
+      <div class="project__card ">
+        <a href="./assets/project/html/manual_testing.html"><img src="./assets/image/manualtest.png" alt="project" /></a>
+      </div>
+      <div class="project__card ">
+       <a href="./assets/project/html/bootstrap.html"> <img src="./assets/image/bootstrap.jpeg" alt="project" /></a>
+      </div>
+    </div>
+  </section>
+  <!-- project -->
   <section class="section__container service__container" id="service">
     <h2 class="section__header">What I Do?</h2>
     <p class="section__description">
@@ -136,13 +149,14 @@
         </p>
       </div>
       <a href="./assets/project/reactjs/react-project.html">
-      <div class="service__card">
-        <span><i class="fa-brands fa-react"></i></span>
-        <h4>React.js</h4>
-        <p>
-          I build fast and modern web applications using React.js, ensuring smooth performance and a great user experience.
-        </p>
-      </div>
+        <div class="service__card">
+          <span><i class="fa-brands fa-react"></i></span>
+          <h4>React.js</h4>
+          <p>
+            I build fast and modern web applications using React.js, ensuring smooth performance and a great user
+            experience.
+          </p>
+        </div>
       </a>
       <div class="service__card">
         <span><i class="fa-brands fa-node"></i></span>
@@ -159,7 +173,7 @@
         </p>
       </div>
     </div>
-</section>
+  </section>
 
 
   <footer class="footer">
@@ -170,9 +184,9 @@
           Passionate web developer crafting engaging and user-friendly digital experiences.
         </p>
         <div class="footer__socials">
-          <a href="#" aria-label="Email"><i class="ri-mail-fill"></i></a>
-          <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" aria-label="Email"><i class="ri-mail-fill"></i></a>
+          <a href="https://github.com/ShubhamFullstackDevelloper/ShubhamFullstackDevelloper" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/shubham-kakde-a291892a9/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
           <a href="#" aria-label="Skype"><i class="ri-skype-fill"></i></a>
 
         </div>
