@@ -284,21 +284,30 @@ nav {
   gap: 1rem;
 }
 
-.project__card img {
-  width: 100%; 
-  height: 100%;
-  object-fit: cover; 
-  border-radius: 5px;
-  cursor: pointer;
-}
 .project__card {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100%; /* Ensures the card takes full width */
-  height: 400px; /* Set a fixed height */
+  width: 100%;
+  height: 300px; /* Adjust the height to ensure consistency */
+  border-radius: 10px; /* Smooth corners for all cards */
+  background-color: #111827; /* Dark background for better contrast */
 }
+
+.project__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image scales without cropping */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.project__card img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add hover shadow */
+}
+
 
 .service__grid {
   margin-top: 4rem;
