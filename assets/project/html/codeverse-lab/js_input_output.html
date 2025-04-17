@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three‑Box I/O Demo</title>
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url(https://raw.githubusercontent.com/CiurescuP/LogIn-Form/main/bg.jpg);
+      background-repeat: no-repeat;
+      padding: 2rem;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.635);
+      border: 1px solid #cccccce4;
+      border-radius: 8px;
+      padding: 1rem;
+      min-height: 200px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    /* Make inputs/buttons take full width */
+    .card input, .card button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      box-sizing: border-box;
+    }
+    pre {
+      background: #f4f4f4a8;
+      padding: 0.5rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+    <!-- First box: inputs + button -->
+    <div class="card" id="inputBox">
+      <h3>Enter Numbers</h3>
+      <input type="number" id="num1" placeholder="First number" />
+      <input type="number" id="num2" placeholder="Second number" />
+      <button id="computeBtn">Compute Sum</button>
+    </div>
+
+    <!-- Second box: show the JS code -->
+    <div class="card" id="codeBox">
+      <h3>JavaScript Code</h3>
+      <pre><code>
+function computeSum() {
+  const a = parseFloat(document.getElementById('num1').value) || 0;
+  const b = parseFloat(document.getElementById('num2').value) || 0;
+  const sum = a + b;
+  document.getElementById('output').innerText = 'Result: ' + sum;
+}
+
+document.getElementById('computeBtn')
+        .addEventListener('click', computeSum);
+      </code></pre>
+    </div>
+
+    <!-- Third box: shows the output -->
+    <div class="card" id="outputBox">
+      <h3>Output</h3>
+      <p id="output">Result will appear here</p>
+    </div>
+  </div>
+
+  <!-- Your actual script -->
+  <script>
+    function computeSum() {
+      const a = parseFloat(document.getElementById('num1').value) ;
+      const b = parseFloat(document.getElementById('num2').value) ;
+      const sum = a + b;
+      document.getElementById('output').innerText = 'Result: ' + sum;
+    }
+
+    document.getElementById('computeBtn')
+            .addEventListener('click', computeSum);
+  </script>
+</body>
+
+</html>
