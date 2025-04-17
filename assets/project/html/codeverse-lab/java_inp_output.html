@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Js I/O Demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+    <!-- Second box: show the java code -->
+    <div class="card" id="codeBox">
+      <h3>Java lan</h3>
+      <pre><code>
+        import java.util.Scanner;
+
+        public class SimpleSum {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+        
+                System.out.print("Enter first number: ");
+                double num1 = scanner.nextDouble();
+        
+                System.out.print("Enter second number: ");
+                double num2 = scanner.nextDouble();
+        
+                double sum = num1 + num2;
+        
+                System.out.println("Result: " + sum);
+            }
+        }
+        
+      </code></pre>
+    </div>
+
+    <!-- Third box: shows the output -->
+    <div class="card" id="outputBox">
+      <h3>Output</h3>
+      <p id="output">
+        <pre>
+            <code>
+                Enter first number: 10.5
+                Enter second number: 5
+                Result: 15.5
+
+            </code>
+        </pre>
+
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(https://raw.githubusercontent.com/CiurescuP/LogIn-Form/main/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 2rem;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.635);
+    border: 1px solid #cccccce4;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 200px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  }
+  /* Make inputs/buttons take full width */
+  .card input, .card button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+  }
+  pre {
+    background: #f4f4f4a8;
+    padding: 0.5rem;
+    overflow-x: auto;
+  }

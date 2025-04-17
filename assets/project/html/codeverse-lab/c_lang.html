@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Js I/O Demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+    <!-- Second box: show the java code -->
+    <div class="card" id="codeBox">
+      <h3> C lan</h3>
+      <pre><code>
+        #include <stdio.h>
+
+            int main() {
+                double num1, num2, sum;
+            
+                printf("Enter first number: ");
+                scanf("%lf", &num1);
+            
+                printf("Enter second number: ");
+                scanf("%lf", &num2);
+            
+                sum = num1 + num2;
+            
+                printf("Result: %.2lf\n", sum);
+            
+                return 0;
+            }
+            
+        
+      </code></pre>
+    </div>
+
+    <!-- Third box: shows the output -->
+    <div class="card" id="outputBox">
+      <h3>Output</h3>
+      <p id="output">
+        <pre>
+            <code>
+                Enter first number: 10.5
+                Enter second number: 5
+                Result: 15.50
+                
+
+            </code>
+        </pre>
+
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

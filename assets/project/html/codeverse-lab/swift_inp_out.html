@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Js I/O Demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+    <!-- Second box: show the java code -->
+    <div class="card" id="codeBox">
+      <h3>Swift code</h3>
+      <pre><code>
+        import Foundation
+
+        print("Enter first number: ", terminator: "")
+        let input1 = readLine() ?? "0"
+        let num1 = Double(input1) ?? 0
+        
+        print("Enter second number: ", terminator: "")
+        let input2 = readLine() ?? "0"
+        let num2 = Double(input2) ?? 0
+        
+        let sum = num1 + num2
+        print("Result: \(sum)")
+        
+        
+      </code></pre>
+    </div>
+
+    <!-- Third box: shows the output -->
+    <div class="card" id="outputBox">
+      <h3>Output</h3>
+      <p id="output">
+        <pre>
+            <code>
+                Enter first number: 150
+                Enter second number: 5
+                Result: 155
+                
+
+            </code>
+        </pre>
+
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
